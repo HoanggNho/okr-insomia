@@ -75,7 +75,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"d8fia583774a438e892974acf6d77f7l\"\n}"
+        "text": "{\n\t\"code\": \"75dlc69b436440e589a55a3f82e8450m\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -282,7 +282,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n\t\"kr_id\": 1\n}"
+        "text": "{\n\t\"object_id\": 1,\n\t\"kr_id\": 46\n}"
       },
       "parameters": [],
       "headers": [
@@ -332,7 +332,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n  \"kr_id\": 46,\n\t\"name\": \"Công việc 1\",\n\t\"participant_id\": [ 1, 2, 3 ],\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
+        "text": "{\n\t\"object_id\": 1,\n  \"kr_id\": 46,\n\t\"name\": \"Công việc 2\",\n\t\"participant_id\": [ 8, 9, 10 ],\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -350,6 +350,82 @@
       ],
       "authentication": {},
       "metaSortKey": -1713227687930.8037,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_fe4e1a4e41324163b62e301792afafe2",
+      "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
+      "modified": "1637671845661",
+      "created": 1715678123589,
+      "url": "{{ _.host }}/okr/business/task/task",
+      "name": "Xóa task",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"object_id\": 1,\n\t\"kr_id\": 46,\n\t\"task_id\": 3\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713214954823.7769,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_34914546370e4314b6f7c4f2ff1d0c8a",
+      "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
+      "modified": "1637671845661",
+      "created": 1715679838601,
+      "url": "{{ _.host }}/okr/business/task/participant",
+      "name": "Chỉnh sửa người theo dõi",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"object_id\": 1,\n\t\"kr_id\": 46,\n\t\"task_id\": 4,\n\t\"participant_id\": [ 6, 7, 8 ]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713208588295.2634,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
@@ -894,6 +970,44 @@
       ],
       "authentication": {},
       "metaSortKey": -1713202221341.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e5dfae6ad26440cdb107393044d78066",
+      "parentId": "fld_3dbc2139bb9e405cb988cd0ea5595de1",
+      "modified": "1637671845661",
+      "created": 1715685724228,
+      "url": "{{ _.host }}/okr/business/okrs/unit",
+      "name": "Xóa đơn vị",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 7\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713202221591.75,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
