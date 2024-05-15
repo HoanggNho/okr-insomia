@@ -189,7 +189,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Mục tiêu 6\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": []\n\t},\n\t\"period_id\": 1,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 120,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 1,\n\t\t\t\"target_value\": 10,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 20,\n\t\t\t\"target_value\": 80,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\t\"list_aligned_object_id\": [ 2, 4 ]\n}"
+        "text": "{\n\t\"name\": \"Mục tiêu 777\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": []\n\t},\n\t\"period_id\": 4,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 120,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 1,\n\t\t\t\"target_value\": 10,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 20,\n\t\t\t\"target_value\": 80,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\t\"list_aligned_object_id\": [ 2, 4 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -265,7 +265,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 1,\n\t\"aligned_user_id\": 511\n}"
+        "text": "{\n\t\"period_id\": 46,\n\t\"aligned_user_id\": 9\n}"
       },
       "parameters": [],
       "headers": [
@@ -928,7 +928,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n\t\"is_draft\": true,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"id\": 46,\n\t\t\t\"progress\": 50,\n\t\t\t\"checkin_value\": 10,\n\t\t\t\"problem_solution\": \"123123zzzzz\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"list_task\": [ 78, 79\t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu\"\n\t\t},\n\t\t{\n\t\t\t\"id\": 47,\n\t\t\t\"progress\": 50,\n\t\t\t\"checkin_value\": 10,\n\t\t\t\"problem_solution\": \"123123zzzzz\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"list_task\": [91],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu\"\n\t\t},\n\t\t{\n\t\t\t\"id\": 48,\n\t\t\t\"progress\": 50,\n\t\t\t\"checkin_value\": 10,\n\t\t\t\"problem_solution\": \"123123zzzzz\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"list_task\": [ 93, 94\t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 1,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 46,\n\t\t\t\"progress\": 50,\n\t\t\t\"checkin_value\": 10,\n\t\t\t\"problem_solution\": \"123123zzzzz\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"list_task\": [ 78, 79\t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 47,\n\t\t\t\"progress\": 50,\n\t\t\t\"checkin_value\": 10,\n\t\t\t\"problem_solution\": \"123123zzzzz\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"list_task\": [91],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 48,\n\t\t\t\"progress\": 50,\n\t\t\t\"checkin_value\": 10,\n\t\t\t\"problem_solution\": \"123123zzzzz\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"list_task\": [ 93, 94\t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-next\",\n\t\t\t\"confidence_level\": \"confidence\",\n\t\t\t\"progress_speed\": \"very-fast\",\n\t\t\t\"schedule_time\": \"2024-01-30 15:56:01.413057+00\"\n\t\t}\n}"
       },
       "parameters": [],
       "headers": [
