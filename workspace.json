@@ -15,7 +15,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Mục tiêu 4\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [2,5]\n\t},\n\t\"period_id\": 1,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 100,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 150,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 4,\n\t\t\t\"start_value\": 190,\n\t\t\t\"target_value\": 210,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"name\": \"Mục tiêu 4\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"with\",\n\t\t\"data\": [2, 5]\n\t},\n\t\"period_id\": 1,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 100,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 150,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 4,\n\t\t\t\"start_value\": 190,\n\t\t\t\"target_value\": 210,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\t\"list_aligned_object_id\": [ 2 , 3 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -75,7 +75,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 1,\n\t\"aligned_user_id\": 9\n}"
+        "text": "{\n\t\"period_id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -227,7 +227,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 5,\n\t\"name\": \"Mục tiêu 4\",\n\t\"object_type\": \"khat-vong\",\n\t\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [2,9,8]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 17,\n\t\t\t\"name\": \"Key results 8\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 120,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 9\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 1,\n\t\t\t\"target_value\": 10,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 10\",\n\t\t\t\"unit_id\": 4,\n\t\t\t\"start_value\": 20,\n\t\t\t\"target_value\": 80,\n\t\t\t\"kr_type\": \"input\"\n\t\t}\n\t],\n\t\"kr_delete\": [15,16],\n\t\"list_aligned_object_id\": [ 3, 4, 2 ]\n}"
+        "text": "{\n\t\"object_id\": 10,\n\t\"name\": \"Mục tiêu 4\",\n\t\"object_type\": \"khat-vong\",\n\t\n\t\"display_with\": {\n\t\t\"type\": \"with\",\n\t\t\"data\": [ 8, 9]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 24,\n\t\t\t\"name\": \"Key results 777\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 100,\n\t\t\t\"target_value\": 123,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 555\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 110,\n\t\t\t\"target_value\": 456,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 666\",\n\t\t\t\"unit_id\": 4,\n\t\t\t\"start_value\": 120,\n\t\t\t\"target_value\": 678,\n\t\t\t\"kr_type\": \"input\"\n\t\t}\n\t],\n\t\"kr_delete\": [45,46],\n\t\"list_aligned_object_id\": [ 1,2,7 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -341,7 +341,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n\t\"aligned_object_id\": 38\n}"
+        "text": "{\n\t\"object_id\": 4,\n\t\"aligned_object_id\": 8\n}"
       },
       "parameters": [],
       "headers": [
@@ -580,13 +580,13 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1715593783790,
-      "url": "{{ _.host }}/okr/checkin-kr",
+      "url": "{{ _.host }}/okr/checkin/checkin-kr",
       "name": "Checkin OKR",
       "description": "```\nTự tin: ['no-confidence', 'less-confidence', 'confidence', 'very-confidence'] --- không tự tin - thiếu tự tin - tự tin - rất tự tin\n```\n\n```\nTốc độ hoàn thành: ['very-slow', 'slow', 'fast', 'very-fast'] --- rất chậm - chậm - nhanh - rất nhanh\n```\n\n```\nlist_checkin_kr\n\nkr_id: id của kr\nprogress: tự tính theo checkin_value và target_value\ncheckin_value: điền vào ô tiến độ\nproblem_solution: vấn đề gặp phải\nlist_task: [ 1, 2 ] --- id của task việc\nis_delay: delay KR\nreason_delay: lí do delay\n```\n\n```\nevalute_object\n\ntype_schedule: ['wait-next', 'wait-final'] --- checkin kỳ tiếp theo - đặt lịch tổng kết\nschedule_time: lịch\n```",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 4,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 10,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 40,\n\t\t\t\"problem_solution\": \"Chien ngu\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [  12, 11\t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 11,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 50,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 13,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 60,\n\t\t\t\"problem_solution\": \"Chien ngu 3\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-fast\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu33333\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-next\",\n\t\t\t\"confidence_level\": \"confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"schedule_time\": \"2024-01-30 15:56:01.413057+00\"\n\t\t}\n}"
+        "text": "{\n\t\"object_id\": 5,\n\t\"is_draft\": true,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 17,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 40,\n\t\t\t\"problem_solution\": \"Chien ngu\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [ \t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-next\",\n\t\t\t\"confidence_level\": \"confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"schedule_time\": \"2024-01-30 15:56:01.413057+00\"\n\t\t}\n}"
       },
       "parameters": [],
       "headers": [
@@ -624,7 +624,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 4,\n\t\"participant_id\": 1\n}"
+        "text": "{\n\t\"object_id\": 5,\n\t\"participant_id\": 1\n}"
       },
       "parameters": [],
       "headers": [
