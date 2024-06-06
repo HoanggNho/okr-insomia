@@ -5,6 +5,52 @@
   "__export_source": "insomnia.desktop.app:v2021.6.0",
   "resources": [
     {
+      "_id": "req_068398e1a6fe4ed7a4f86c22dd2a5303",
+      "parentId": "__WORKSPACE_ID__",
+      "modified": "1637671845661",
+      "created": 1717596022921,
+      "url": "{{ _.host }}/test",
+      "name": "refresh token",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_a0df06b51dfe42e8b15967da84e3601a",
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": ""
+        },
+        {
+          "id": "pair_0610cc8829984615828a961fdd0511cb",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1717596022921,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "__WORKSPACE_ID__",
+      "parentId": null,
+      "modified": "1637671845661",
+      "created": 1714101676621,
+      "name": "New OKR",
+      "description": "",
+      "scope": "design",
+      "_type": "workspace"
+    },
+    {
       "_id": "req_776f82c454ec4f95bd56bccc0654a16d",
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
@@ -15,7 +61,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Mục tiêu 2\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [2, 5]\n\t},\n\t\"period_id\": 38,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 100,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 150,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 190,\n\t\t\t\"target_value\": 210,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": []\n}"
+        "text": "{\n\t\"name\": \"Mục tiêu 2\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [2, 5]\n\t},\n\t\"period_id\": 38,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 100,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 150,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 190,\n\t\t\t\"target_value\": 210,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -55,16 +101,6 @@
       "_type": "request_group"
     },
     {
-      "_id": "__WORKSPACE_ID__",
-      "parentId": null,
-      "modified": "1637671845661",
-      "created": 1714101676621,
-      "name": "New OKR",
-      "description": "",
-      "scope": "design",
-      "_type": "workspace"
-    },
-    {
       "_id": "req_f7d5a6cce0384f8aa3379abeeffe68b3",
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
@@ -87,7 +123,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_chien }}",
           "description": ""
         }
       ],
@@ -113,7 +149,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"aligned_user_id\": 22,\n\t\"period_id\": 38\n}"
+        "text": "{\n\t\"aligned_user_id\": 24,\n\t\"period_id\": 38\n}"
       },
       "parameters": [],
       "headers": [
@@ -151,7 +187,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"H\",\n\t\"period_id\": 38\n}"
+        "text": "{\n\t\"name\": \"Hải\",\n\t\"period_id\": 38,\n\t\"object_id\": 16\n}"
       },
       "parameters": [],
       "headers": [
@@ -227,7 +263,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 10,\n\t\"name\": \"Mục tiêu 4\",\n\t\"object_type\": \"khat-vong\",\n\t\n\t\"display_with\": {\n\t\t\"type\": \"with\",\n\t\t\"data\": [ 8, 9]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 24,\n\t\t\t\"name\": \"Key results 777\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 100,\n\t\t\t\"target_value\": 123,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 555\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 110,\n\t\t\t\"target_value\": 456,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 666\",\n\t\t\t\"unit_id\": 4,\n\t\t\t\"start_value\": 120,\n\t\t\t\"target_value\": 678,\n\t\t\t\"kr_type\": \"input\"\n\t\t}\n\t],\n\t\"kr_delete\": [45,46],\n\t\"list_aligned_object_id\": [ 1,2,7 ]\n}"
+        "text": "{\n\t\"object_id\": 53,\n\t\"name\": \"Mục tiêu 4\",\n\t\"object_type\": \"khat-vong\",\n\t\"period_id\": 38,\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [ 22, 24 ]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 105,\n\t\t\t\"name\": \"Chien ngu 1\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 100,\n\t\t\t\"target_value\": 123,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"id\": 106,\n\t\t\t\"name\": \"Chien ngu 2\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 110,\n\t\t\t\"target_value\": 456,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"id\": 237,\n\t\t\t\"name\": \"Chien ngu 3\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 120,\n\t\t\t\"target_value\": 678,\n\t\t\t\"kr_type\": \"input\"\n\t\t}\n\t],\n\t\"list_aligned_object_id\": []\n}"
       },
       "parameters": [],
       "headers": [
@@ -303,7 +339,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"user_id\": 2\n}"
+        "text": "{\n\t\"user_id\": 22\n}"
       },
       "parameters": [],
       "headers": [
@@ -341,7 +377,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16,\n\t\"aligned_object_id\": 17\n}"
+        "text": "{\n\t\"object_id\": 16,\n\t\"aligned_object_id\": 143\n}"
       },
       "parameters": [],
       "headers": [
@@ -379,7 +415,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"1d1ve8bbb65f4492a264db2462e811do\"\n}"
+        "text": "{\n\t\"code\": \"8f2s5ed02fa640ac940c97687a61a50p\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -456,7 +492,7 @@
       "created": 1715237727175,
       "url": "{{ _.host }}/okr/checkin/list-okr",
       "name": "Hiển thị List OKR",
-      "description": "",
+      "description": "```\nstatus: \n- wait-next: chờ kỳ checkin tiếp theo\n- draft: checkin nháp\n- wait-final: chờ tổng kết\n- is_summary: đã tổng kết\n```",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
@@ -510,7 +546,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16\n}"
+        "text": "{\n\t\"object_id\": 53\n}"
       },
       "parameters": [],
       "headers": [
@@ -548,7 +584,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 63,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 40,\n\t\t\t\"problem_solution\": \"Chien ngu\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [  \t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 64,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 50,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 65,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 60,\n\t\t\t\"problem_solution\": \"Chien ngu 3\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-fast\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu33333\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-next\",\n\t\t\t\"confidence_level\": \"confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"schedule_time\": \"2024-01-30 15:56:01.413057+00\"\n\t\t}\n}"
+        "text": "{\n\t\"object_id\": 87,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 161,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 40,\n\t\t\t\"problem_solution\": \"Chien ngu\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [ \t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 228,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 50,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-final\",\n\t\t\t\"confidence_level\": \"confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"schedule_time\": \"2024-01-30 15:56:01.413057+00\"\n\t\t}\n}"
       },
       "parameters": [],
       "headers": [
@@ -560,7 +596,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_chien }}",
           "description": ""
         }
       ],
@@ -586,7 +622,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16,\n\t\"participant_id\": 23\n}"
+        "text": "{\n\t\"object_id\": 87,\n\t\"participant_id\": 23\n}"
       },
       "parameters": [],
       "headers": [
@@ -598,7 +634,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_chien }}",
           "description": ""
         }
       ],
@@ -618,13 +654,13 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1716284039892,
-      "url": "{{ _.host }}/okr/checkin/history",
+      "url": "{{ _.host }}/okr/checkin/history-kr",
       "name": "Lịch sử KR kỳ trước",
       "description": "",
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"kr_id\": 63\n}"
+        "text": "{\n\t\"object_id\": 54,\n\t\"kr_id\": 108\n}"
       },
       "parameters": [],
       "headers": [
@@ -656,13 +692,13 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1716386536874,
-      "url": "{{ _.host }}/okr/checkin/summary",
+      "url": "{{ _.host }}/okr/checkin/history-object",
       "name": "Lịch sử Object kỳ trước",
       "description": "",
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16\n}"
+        "text": "{\n\t\"object_id\": 54\n}"
       },
       "parameters": [],
       "headers": [
@@ -700,7 +736,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 4,\n\t\"score_object\": 0.5,\n\t\"list_self_score\": [\n\t\t{\n\t\t\t\"kr_id\": 10,\n\t\t\t\"score_kr\": 1\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 11,\n\t\t\t\"score_kr\": 0.6\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 13,\n\t\t\t\"score_kr\": 0.8\n\t\t}\n\t],\n\t\"hoan_thanh_muc_tieu_chua\": \"test test test\",\n\t\"dieu_gi_gop_phan_thanh_cong\": \"test test test\",\n\t\"gap_nhung_tro_ngai_gi\": \"test test test\",\n\t\"muc_tieu_kho_hay_de_khi_dat_ra\": \"test test test\",\n\t\"viet_lai_se_thay_doi_dieu_gi\": \"test test test\",\n\t\"dieu_gi_thay_doi_voi_OKR_chu_ky_tiep_theo\": \"test test test\",\n\t\"nhan_duoc_gi_tu_quan_ly\": \"1\",\n\t\"dieu_gi_tu_nguoi_quan_ly_can_tro_kha_nang_lam_viec\": \"1\",\n\t\"dieu_gi_giup_ban_thanh_cong_hon\": \"1\",\n\t\"ky_nang_nang_luc_muon_cai_thien\": \"1\",\n\t\"ky_nang_nang_luc_muon_bo_sung\": \"1\",\n\t\"dieu_gi_giup_phat_trien_trong_nghe_nghiep\": \"1\"\n}"
+        "text": "{\n\t\"object_id\": 16,\n\t\"score_object\": 0.5,\n\t\"list_self_score\": [\n\t\t{\n\t\t\t\"kr_id\": 108,\n\t\t\t\"score_kr\": 1\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 109,\n\t\t\t\"score_kr\": 0.6\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 110,\n\t\t\t\"score_kr\": 0.8\n\t\t}\n\t],\n\t\"hoan_thanh_muc_tieu_chua\": \"test test test\",\n\t\"dieu_gi_gop_phan_thanh_cong\": \"test test test\",\n\t\"gap_nhung_tro_ngai_gi\": \"test test test\",\n\t\"muc_tieu_kho_hay_de_khi_dat_ra\": \"test test test\",\n\t\"viet_lai_se_thay_doi_dieu_gi\": \"test test test\",\n\t\"dieu_gi_thay_doi_voi_OKR_chu_ky_tiep_theo\": \"test test test\",\n\t\"nhan_duoc_gi_tu_quan_ly\": \"1\",\n\t\"dieu_gi_tu_nguoi_quan_ly_can_tro_kha_nang_lam_viec\": \"1\",\n\t\"dieu_gi_giup_ban_thanh_cong_hon\": \"1\",\n\t\"ky_nang_nang_luc_muon_cai_thien\": \"1\",\n\t\"ky_nang_nang_luc_muon_bo_sung\": \"1\",\n\t\"dieu_gi_giup_phat_trien_trong_nghe_nghiep\": \"1\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -728,6 +764,44 @@
       "_type": "request"
     },
     {
+      "_id": "req_58b6665132c949aaa1f7c378041a816e",
+      "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
+      "modified": "1637671845661",
+      "created": 1717646844649,
+      "url": "{{ _.host }}/okr/checkin/summary",
+      "name": "Hiển thị tự đánh giá mục tiêu sau tổng kết",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"object_id\": 54\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713284986799.9246,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_71951f10f3864bc5a2795772241e3954",
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
@@ -738,7 +812,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n\t\"kr_id\": 14\n}"
+        "text": "{\n\t\"object_id\": 16,\n\t\"kr_id\": 63\n}"
       },
       "parameters": [],
       "headers": [
@@ -788,7 +862,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n  \"kr_id\": 46,\n\t\"name\": \"Công việc 2\",\n\t\"participant_id\": [ 8, 9, 10 ],\n\t\"status_id\": 1,\n\t\"priority_id\": 1,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
+        "text": "{\n\t\"object_id\": 54,\n  \"kr_id\": 110,\n\t\"name\": \"Công việc 3\",\n\t\"participant_id\": [ 22, 24 ],\n\t\"status_id\": 5,\n\t\"priority_id\": 5,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -826,7 +900,7 @@
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n\t\"kr_id\": 46,\n\t\"task_id\": 3\n}"
+        "text": "{\n\t\"task_id\": 15\n}"
       },
       "parameters": [],
       "headers": [
@@ -859,12 +933,12 @@
       "modified": "1637671845661",
       "created": 1715679838601,
       "url": "{{ _.host }}/okr/task/update-participant",
-      "name": "Chỉnh sửa người theo dõi",
+      "name": "Chỉnh sửa người theo dõi công việc",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 4,\n\t\"participant_id\": [ 7,9 ]\n}"
+        "text": "{\n\t\"task_id\": 14,\n\t\"participant_id\": [ 25,  22 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -935,7 +1009,7 @@
       "modified": "1637671845661",
       "created": 1716377042958,
       "url": "{{ _.host }}/okr/task/update-status",
-      "name": "Chỉnh sửa trạng thái",
+      "name": "Chỉnh sửa trạng thái công việc",
       "description": "",
       "method": "PUT",
       "body": {
@@ -973,7 +1047,7 @@
       "modified": "1637671845661",
       "created": 1716377070703,
       "url": "{{ _.host }}/okr/task/update-priority",
-      "name": "Chỉnh sửa mức độ ưu tiên",
+      "name": "Chỉnh sửa mức độ ưu tiên công việc",
       "description": "",
       "method": "PUT",
       "body": {
@@ -1011,12 +1085,12 @@
       "modified": "1637671845661",
       "created": 1716440571338,
       "url": "{{ _.host }}/okr/task/batch-update-participant",
-      "name": "Chỉnh sửa người theo dõi nhiều task",
+      "name": "Chỉnh sửa người theo dõi nhiều công việc",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 4, 6 ],\n\t\"participant_id\": [ 7, 8 ,2 ]\n}"
+        "text": "{\n\t\"list_task\": [ 13, 14 ],\n\t\"participant_id\": [ 24, 22 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1049,12 +1123,12 @@
       "modified": "1637671845661",
       "created": 1716440610616,
       "url": "{{ _.host }}/okr/task/batch-update-status",
-      "name": "Chỉnh sửa trạng thái nhiều task",
+      "name": "Chỉnh sửa trạng thái nhiều công việc",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 4, 6 ],\n\t\"status_id\": 2\n}"
+        "text": "{\n\t\"list_task\": [ 13, 14 ],\n\t\"status_id\": 5\n}"
       },
       "parameters": [],
       "headers": [
@@ -1087,12 +1161,12 @@
       "modified": "1637671845661",
       "created": 1716440621809,
       "url": "{{ _.host }}/okr/task/batch-update-priority",
-      "name": "Chỉnh sửa mức độ ưu tiên nhiều task",
+      "name": "Chỉnh sửa mức độ ưu tiên nhiều công việc",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 4, 6 ],\n\t\"priority_id\": 2\n}"
+        "text": "{\n\t\"list_task\": [ 13, 14 ],\n\t\"priority_id\": 5\n}"
       },
       "parameters": [],
       "headers": [
@@ -1158,6 +1232,82 @@
       "_type": "request"
     },
     {
+      "_id": "req_7bd167c29dd2420b8489ce54b5a99f53",
+      "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
+      "modified": "1637671845661",
+      "created": 1717436129080,
+      "url": "{{ _.host }}/okr/task/update-progress",
+      "name": "Chỉnh sửa tiến độ",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"task_id\": 13,\n\t\"progress\": 60\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713210179927.3916,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_632f713d6470460695f1e0bde436a0e2",
+      "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
+      "modified": "1637671845661",
+      "created": 1717439501344,
+      "url": "{{ _.host }}/okr/task/lark-base",
+      "name": "Thêm url lark base",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"object_id\": 16,\n  \"url\": \"https://smitvietnam.larksuite.com/base/HkZDbw656a5OxAsp0xCuouftsCg?table=tbljfQvGI4M9tm9h&view=vewIX0SJpb\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713132040768.1978,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_b5cf4797c50c42aeb5d60d1f79469406",
       "parentId": "fld_9ffd66d710cf4a078cb9760e89b3e584",
       "modified": "1637671845661",
@@ -1168,7 +1318,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 1,\n\t\"type\": \"me\"\n}"
+        "text": "{\n\t\"period_id\": 38,\n\t\"type\": \"me\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1218,7 +1368,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 126\n}"
+        "text": "{\n\t\"check_in_id\": 136\n}"
       },
       "parameters": [],
       "headers": [
@@ -1256,7 +1406,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 126,\n\t\"type_response\": \"positive\",\n\t\"emp_effort\": \"effort\",\n\t\"emp_performance\": \"good\",\n\t\"content\": \"Làm tốt lắm\"\n}"
+        "text": "{\n\t\"check_in_id\": 133,\n\t\"type_response\": \"positive\",\n\t\"emp_effort\": \"effort\",\n\t\"emp_performance\": \"good\",\n\t\"content\": \"Làm tốt lắm\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1294,7 +1444,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 126,\n\t\"send\": \"Xin chào\"\n}"
+        "text": "{\n\t\"check_in_id\": 131,\n\t\"send\": \"Xin chào\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1312,334 +1462,6 @@
       ],
       "authentication": {},
       "metaSortKey": -1713240421012.8306,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_5c366264190349b7bc1083d3e95d5883",
-      "parentId": "fld_3dbc2139bb9e405cb988cd0ea5595de1",
-      "modified": "1637671845661",
-      "created": 1715068726909,
-      "url": "{{ _.host }}/okr/business/okrs/users",
-      "name": "Hiển thị danh sách user kèm người yêu thích",
-      "description": "",
-      "method": "GET",
-      "body": {
-        "mimeType": "application/json",
-        "text": ""
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713202221279.25,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "fld_3dbc2139bb9e405cb988cd0ea5595de1",
-      "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
-      "modified": "1637671845661",
-      "created": 1715056920683,
-      "name": "Business",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -1715056923976,
-      "_type": "request_group"
-    },
-    {
-      "_id": "req_ff490cb4b7f640c49a1d358f0609b5c7",
-      "parentId": "fld_3dbc2139bb9e405cb988cd0ea5595de1",
-      "modified": "1637671845661",
-      "created": 1715414053681,
-      "url": "{{ _.host }}/okr/okrs/avatar",
-      "name": "Hiển thị Avatar",
-      "description": "",
-      "method": "GET",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713202221504.25,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_90b9b541f0fd4fed96780c406e2fd40f",
-      "parentId": "fld_bd8a83ba359a48a89a414ab438078d85",
-      "modified": "1637671845661",
-      "created": 1715021879227,
-      "url": "{{ _.host }}/okr/personal/period",
-      "name": "Add Period Personal",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Chu kỳ 2\",\n\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\"end_time\": \"2024-10-05 04:05:55.984305+00\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713127265896.8125,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "fld_bd8a83ba359a48a89a414ab438078d85",
-      "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
-      "modified": "1637671845661",
-      "created": 1715056927269,
-      "name": "Personal",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -1714017139066.4688,
-      "_type": "request_group"
-    },
-    {
-      "_id": "req_ad20fbf80ec649819246bec837bf4937",
-      "parentId": "fld_bd8a83ba359a48a89a414ab438078d85",
-      "modified": "1637671845661",
-      "created": 1715053142479,
-      "url": "{{ _.host }}/okr/personal/period",
-      "name": "Get Period Personal",
-      "description": "",
-      "method": "GET",
-      "body": {
-        "mimeType": "application/json",
-        "text": ""
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713127265846.8125,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_a84909e59e194f5aaf0fdbb081f9d7a2",
-      "parentId": "fld_bd8a83ba359a48a89a414ab438078d85",
-      "modified": "1637671845661",
-      "created": 1715056973077,
-      "url": "{{ _.host }}/okr/personal/unit",
-      "name": "Add Unit Personal",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"unit\": \"%\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713127265796.8125,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_44730fdea5344ff5b25eca1e68148341",
-      "parentId": "fld_bd8a83ba359a48a89a414ab438078d85",
-      "modified": "1637671845661",
-      "created": 1715056989726,
-      "url": "{{ _.host }}/okr/personal/unit",
-      "name": "Get Unit Personal",
-      "description": "",
-      "method": "GET",
-      "body": {
-        "mimeType": "application/json",
-        "text": ""
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713127265746.8125,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_5b8e684fb7d4422c8580bd411c54ecc0",
-      "parentId": "fld_bd8a83ba359a48a89a414ab438078d85",
-      "modified": "1637671845661",
-      "created": 1715104486288,
-      "url": "{{ _.host }}/okr/personal/update-okr",
-      "name": "Update OKR Personal",
-      "description": "",
-      "method": "PUT",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n\t\"name\": \"Mục tiêu 2\",\n\t\"object_type\": \"cam-ket\",\n\t\n\t\"display_with\": {\n\t\t\"type\": \"private\",\n\t\t\"data\": []\n\t},\n\t\"period_id\": 1,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 120,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 1,\n\t\t\t\"target_value\": 10,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 20,\n\t\t\t\"target_value\": 80,\n\t\t\t\"kr_type\": \"input\"\n\t\t}\n\t]\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713127265696.8125,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_2e8faf0067ab4aecb0697c08525975b4",
-      "parentId": "fld_bd8a83ba359a48a89a414ab438078d85",
-      "modified": "1637671845661",
-      "created": 1715105493577,
-      "url": "{{ _.host }}/okr/personal/add-okr",
-      "name": "Add OKR Personal",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Mục tiêu 2\",\n\t\"object_type\": \"cam-ket\",\n\t\"display_with\": {\n\t\t\"type\": \"private\",\n\t\t\"data\": []\n\t},\n\t\"period_id\": 1,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 120,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 1,\n\t\t\t\"target_value\": 10,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 20,\n\t\t\t\"target_value\": 80,\n\t\t\t\"kr_type\": \"input\"\n\t\t}\n\t],\n\t\"aligned_object_id\": 2\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713127265721.8125,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
@@ -2076,7 +1898,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"status\": \"Doing\"\n}"
+        "text": "{\n\t\"status\": \"Done\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2240,7 +2062,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"priority\": \"P2\"\n}"
+        "text": "{\n\t\"priority\": \"P1\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2401,14 +2223,16 @@
       "name": "Base Environment",
       "data": {
         "host": "http://dev.smit.team:6840",
-        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMywiaWF0IjoxNzE3MTc3NzE0LCJleHAiOjE3MTc3ODI1MTR9.wwxBAYDqTrbmxw9EVkVAmeH3KNXNkITYg0AfxJhaxNc",
-        "access_token2": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMywiaWF0IjoxNzE1NzQwNTY3LCJleHAiOjE3MTYzNDUzNjd9.md7tj6v-zgqCZ2G4DoXDYytWgOu_xjqtNp_vqRcZ1qE"
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMywib3duZXJfdHlwZSI6ImJ1c2luZXNzIiwiaWF0IjoxNzE3NjAzMTA5LCJleHAiOjE3MTgyMDc5MDl9.fFzS9Yd3j9rv6G9fyfignoeIhSU1hgmBPlcdW0jAPsM",
+        "access_token_hai": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyNCwiaWF0IjoxNzE3MjI2MDg2LCJleHAiOjE3MTc4MzA4ODZ9.T6qFd0kz7l6Ys7zaUAMRDsv5spF5CDjVzHeHDKBrhIU",
+        "access_token_chien": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwiaWF0IjoxNzE3Mzk4MzMyLCJleHAiOjE3MTgwMDMxMzJ9.0bqMMz1o9IzIjG1qKViq55SIJGhCf8wK6g5hEZYwTkY"
       },
       "dataPropertyOrder": {
         "&": [
           "host",
           "access_token",
-          "access_token2"
+          "access_token_hai",
+          "access_token_chien"
         ]
       },
       "color": null,
