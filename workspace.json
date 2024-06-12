@@ -123,7 +123,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token_chien }}",
+          "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
@@ -263,7 +263,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 53,\n\t\"name\": \"Mục tiêu 4\",\n\t\"object_type\": \"khat-vong\",\n\t\"period_id\": 38,\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [ 22, 24 ]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 105,\n\t\t\t\"name\": \"Chien ngu 1\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 100,\n\t\t\t\"target_value\": 123,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"id\": 106,\n\t\t\t\"name\": \"Chien ngu 2\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 110,\n\t\t\t\"target_value\": 456,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"id\": 237,\n\t\t\t\"name\": \"Chien ngu 3\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 120,\n\t\t\t\"target_value\": 678,\n\t\t\t\"kr_type\": \"input\"\n\t\t}\n\t],\n\t\"list_aligned_object_id\": []\n}"
+        "text": "{\n\t\"object_id\": 127,\n\t\"name\": \"33333ưedwererw\",\n\t\"object_type\": \"khat-vong\",\n\t\"period_id\": 38,\n\t\"display_with\": {\n\t\t\"type\": \"with\",\n\t\t\"data\": [ 22,24,25 ]\n\t},\n\t\"list_kr\": [\n\t\t{\n       \"name\": \"hoangchien456456\",\n       \"unit_id\": 30,\n       \"start_value\": 13323312,\n       \"target_value\": 13333213213,\n       \"kr_type\": \"output\"\n    }\n\t],\n\t\"list_aligned_object_id\": [ 183, 186 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -377,7 +377,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16,\n\t\"aligned_object_id\": 143\n}"
+        "text": "{\n\t\"object_id\": 34,\n\t\"aligned_object_id\": 171\n}"
       },
       "parameters": [],
       "headers": [
@@ -470,7 +470,7 @@
         {
           "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_hai }}",
           "description": ""
         }
       ],
@@ -546,7 +546,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 53\n}"
+        "text": "{\n\t\"object_id\": 16\n}"
       },
       "parameters": [],
       "headers": [
@@ -584,7 +584,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 87,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 161,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 40,\n\t\t\t\"problem_solution\": \"Chien ngu\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [ \t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 228,\n\t\t\t\"progress\": 60,\n\t\t\t\"checkin_value\": 50,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-final\",\n\t\t\t\"confidence_level\": \"confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"schedule_time\": \"2024-01-30 15:56:01.413057+00\"\n\t\t}\n}"
+        "text": "{\n\t\"object_id\": 16,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 63,\n\t\t\t\"checkin_value\": 40,\n\t\t\t\"problem_solution\": \"Chien ngu\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [ 25\t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 64,\n\t\t\t\"checkin_value\": 50,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 65,\n\t\t\t\"checkin_value\": 60,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-final\",\n\t\t\t\"confidence_level\": \"very-confidence\",\n\t\t\t\"progress_speed\": \"very-fast\",\n\t\t\t\"schedule_time\": \"2024-01-30 15:56:01.413057+00\"\n\t\t}\n}"
       },
       "parameters": [],
       "headers": [
@@ -596,7 +596,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token_chien }}",
+          "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
@@ -622,7 +622,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 87,\n\t\"participant_id\": 23\n}"
+        "text": "{\n\t\"object_id\": 127,\n\t\"participant_id\": 24\n}"
       },
       "parameters": [],
       "headers": [
@@ -634,7 +634,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token_chien }}",
+          "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
@@ -698,7 +698,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 54\n}"
+        "text": "{\n\t\"object_id\": 196\n}"
       },
       "parameters": [],
       "headers": [
@@ -710,7 +710,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_chien }}",
           "description": ""
         }
       ],
@@ -812,7 +812,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16,\n\t\"kr_id\": 63\n}"
+        "text": "{\n\t\"object_id\": 54,\n\t\"kr_id\": 108\n}"
       },
       "parameters": [],
       "headers": [
@@ -862,7 +862,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 54,\n  \"kr_id\": 110,\n\t\"name\": \"Công việc 3\",\n\t\"participant_id\": [ 22, 24 ],\n\t\"status_id\": 5,\n\t\"priority_id\": 5,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
+        "text": "{\n\t\"object_id\": 54,\n  \"kr_id\": 108,\n\t\"name\": \"Công việc 7\",\n\t\"participant_id\": [  ],\n\t\"status_id\": 5,\n\t\"priority_id\": 5,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1275,12 +1275,12 @@
       "modified": "1637671845661",
       "created": 1717439501344,
       "url": "{{ _.host }}/okr/task/lark-base",
-      "name": "Thêm url lark base",
+      "name": "Thêm URL Lark Base",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16,\n  \"url\": \"https://smitvietnam.larksuite.com/base/HkZDbw656a5OxAsp0xCuouftsCg?table=tbljfQvGI4M9tm9h&view=vewIX0SJpb\"\n}"
+        "text": "{\n\t\"object_id\": 16,\n  \"url\": \"https://smitvietnam.larksuite.com/base/UOHnbzLdPaB4clsMitZuGmLfshd?table=tblIomevNVE7ndq4&view=vewIX0SJpb\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1308,6 +1308,44 @@
       "_type": "request"
     },
     {
+      "_id": "req_8f7dbc2a8a7a427c92168dd991d8ba99",
+      "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
+      "modified": "1637671845661",
+      "created": 1718092296851,
+      "url": "{{ _.host }}/okr/task/link-field",
+      "name": "Liên kết Field",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"object_id\": 16\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713093767029.6648,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_b5cf4797c50c42aeb5d60d1f79469406",
       "parentId": "fld_9ffd66d710cf4a078cb9760e89b3e584",
       "modified": "1637671845661",
@@ -1318,7 +1356,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 38,\n\t\"type\": \"me\"\n}"
+        "text": "{\n\t\"period_id\": 38,\n\t\"type\": \"with-me\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1406,7 +1444,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 133,\n\t\"type_response\": \"positive\",\n\t\"emp_effort\": \"effort\",\n\t\"emp_performance\": \"good\",\n\t\"content\": \"Làm tốt lắm\"\n}"
+        "text": "{\n\t\"check_in_id\": 210,\n\t\"type_response\": \"positive\",\n\t\"emp_effort\": \"effort\",\n\t\"emp_performance\": \"good\",\n\t\"content\": \"Làm tốt lắm\"\n}"
       },
       "parameters": [],
       "headers": [
