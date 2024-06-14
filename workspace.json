@@ -9,7 +9,7 @@
       "parentId": "__WORKSPACE_ID__",
       "modified": "1637671845661",
       "created": 1717596022921,
-      "url": "{{ _.host }}/test",
+      "url": "{{ _.host }}/public/refresh-token",
       "name": "refresh token",
       "description": "",
       "method": "GET",
@@ -584,7 +584,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 63,\n\t\t\t\"checkin_value\": 40,\n\t\t\t\"problem_solution\": \"Chien ngu\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [ \t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 64,\n\t\t\t\"checkin_value\": 50,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 65,\n\t\t\t\"checkin_value\": 60,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-final\",\n\t\t\t\"confidence_level\": \"very-confidence\",\n\t\t\t\"progress_speed\": \"very-fast\",\n\t\t\t\"schedule_time\": \"2024-01-30 15:56:01.413057+00\"\n\t\t}\n}"
+        "text": "{\n\t\"object_id\": 34,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 84,\n\t\t\t\"checkin_value\": 40,\n\t\t\t\"problem_solution\": \"Chien ngu\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [ \t],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 85,\n\t\t\t\"checkin_value\": 50,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 86,\n\t\t\t\"checkin_value\": 60,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-final\",\n\t\t\t\"confidence_level\": \"very-confidence\",\n\t\t\t\"progress_speed\": \"very-fast\",\n\t\t\t\"schedule_time\": \"2024-01-30 15:56:01.413057+00\"\n\t\t}\n}"
       },
       "parameters": [],
       "headers": [
@@ -812,7 +812,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 54,\n\t\"kr_id\": 108\n}"
+        "text": "{\n\t\"object_id\": 16,\n\t\"kr_id\": 63\n}"
       },
       "parameters": [],
       "headers": [
@@ -1318,7 +1318,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16\n}"
+        "text": "{\n\t\"object_id\": 16,\n\t\"list_field\": [\n\t\t{\n\t\t\t\"db_field\": \"field_name\",\n\t\t\t\"lark_field_id\": \"fldsLNwISb\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_start_time\",\n\t\t\t\"lark_field_id\": \"fld1fKTh3E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_end_time\",\n\t\t\t\"lark_field_id\": \"fld9sFkCDd\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_task_note\",\n\t\t\t\"lark_field_id\": \"fldKkc6Nd3\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_user\",\n\t\t\t\"lark_field_id\": \"fldB9ga2xp\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_participant_task\",\n\t\t\t\"lark_field_id\": \"fldBDgSRpG\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_priority\",\n\t\t\t\"lark_field_id\": \"fld2jdbS2E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_status\",\n\t\t\t\"lark_field_id\": \"fldopO5wYn\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_progress\",\n\t\t\t\"lark_field_id\": \"fldmDx9DFi\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_kr_id\",\n\t\t\t\"lark_field_id\": \"flddHnHGOL\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_key_result\",\n\t\t\t\"lark_field_id\": \"fld5liby8z\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_task_id\",\n\t\t\t\"lark_field_id\": \"fldxErSXN2\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1356,7 +1356,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 38,\n\t\"type\": \"me\"\n}"
+        "text": "{\n\t\"period_id\": 38,\n\t\"type\": \"with-me\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1406,7 +1406,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 136\n}"
+        "text": "{\n\t\"check_in_id\": 184\n}"
       },
       "parameters": [],
       "headers": [
@@ -1444,7 +1444,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 210,\n\t\"type_response\": \"positive\",\n\t\"emp_effort\": \"effort\",\n\t\"emp_performance\": \"good\",\n\t\"content\": \"Làm tốt lắm\"\n}"
+        "text": "{\n\t\"check_in_id\": 187,\n\t\"type_response\": \"positive\",\n\t\"emp_effort\": \"effort\",\n\t\"emp_performance\": \"good\",\n\t\"content\": \"Làm tốt lắm\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1456,7 +1456,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_chien }}",
           "description": ""
         }
       ],
@@ -1482,7 +1482,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 131,\n\t\"send\": \"Xin chào\"\n}"
+        "text": "{\n\t\"check_in_id\": 184,\n\t\"send\": \"Con chó chiến nguuuuu\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1936,7 +1936,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"status\": \"Done\"\n}"
+        "text": "{\n\t\"status\": \"Done\",\n\t\"color\": 123\n}"
       },
       "parameters": [],
       "headers": [
@@ -1986,7 +1986,7 @@
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"status_id\": 4\n}"
+        "text": "{\n\t\"status_id\": 5\n}"
       },
       "parameters": [],
       "headers": [
@@ -2024,7 +2024,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"status_id\": 4,\n\t\"status\": \"Doinggg\"\n}"
+        "text": "{\n\t\"status_id\": 4,\n\t\"status\": \"Doinggg\",\n\t\"color\": 123\n}"
       },
       "parameters": [],
       "headers": [
@@ -2100,7 +2100,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"priority\": \"P1\"\n}"
+        "text": "{\n\t\"priority\": \"P1\",\n\t\"color\": 123\n}"
       },
       "parameters": [],
       "headers": [
@@ -2188,7 +2188,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"priority_id\": 2,\n\t\"priority\": \"P4\"\n}"
+        "text": "{\n\t\"priority_id\": 2,\n\t\"priority\": \"P4\",\n\t\"color\": 123\n}"
       },
       "parameters": [],
       "headers": [
