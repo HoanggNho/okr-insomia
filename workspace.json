@@ -123,7 +123,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_hai }}",
           "description": ""
         }
       ],
@@ -862,7 +862,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 54,\n  \"kr_id\": 108,\n\t\"name\": \"Công việc 7\",\n\t\"participant_id\": [  ],\n\t\"status_id\": 5,\n\t\"priority_id\": 5,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
+        "text": "{\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"object_id\": 54,\n\t\t\t\"kr_id\": 108,\n\t\t\t\"name\": \"Công việc 8\",\n\t\t\t\"participant_id\": [ 25 ],\n\t\t\t\"status_id\": 27,\n\t\t\t\"priority_id\": 8,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"object_id\": 16,\n\t\t\t\"kr_id\": 63,\n\t\t\t\"name\": \"Công việc 9\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 27,\n\t\t\t\"priority_id\": 8,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"object_id\": 16,\n\t\t\t\"kr_id\": 63,\n\t\t\t\"name\": \"Công việc 10\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 27,\n\t\t\t\"priority_id\": 8,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1014,7 +1014,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 4,\n\t\"status_id\": 1\n}"
+        "text": "{\n\t\"task_id\": 13,\n\t\"status_id\": 12\n}"
       },
       "parameters": [],
       "headers": [
@@ -1336,6 +1336,44 @@
       ],
       "authentication": {},
       "metaSortKey": -1713093767029.6648,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1049d3716bef474792f3603451cd8991",
+      "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
+      "modified": "1637671845661",
+      "created": 1718357627235,
+      "url": "{{ _.host }}/okr/task/task",
+      "name": "Chỉnh sửa task việc",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"task_id\": 18,\n\t\"name\": \"Công việc 7\",\n\t\"participant_id\": [  25, 24 ],\n\t\"status_id\": 22,\n\t\"priority_id\": 5,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713221321352.2903,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
@@ -1936,7 +1974,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"status\": \"Done\",\n\t\"color\": 123\n}"
+        "text": "{\n\t\"status\": \"Doneeeee\",\n\t\"color\": \"#123\"\n}"
       },
       "parameters": [],
       "headers": [
