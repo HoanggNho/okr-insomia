@@ -61,7 +61,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Mục tiêu 2\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": []\n\t},\n\t\"period_id\": 99,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 100,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 150,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 5,\n\t\t\t\"start_value\": 190,\n\t\t\t\"target_value\": 210,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
+        "text": "{\n\t\"name\": \"Mục tiêu 2\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": []\n\t},\n\t\"period_id\": 4,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 100,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 150,\n\t\t\t\"target_value\": 170,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 1,\n\t\t\t\"start_value\": 190,\n\t\t\t\"target_value\": 210,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -263,7 +263,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 127,\n\t\"name\": \"33333ưedwererw\",\n\t\"object_type\": \"khat-vong\",\n\t\"period_id\": 38,\n\t\"display_with\": {\n\t\t\"type\": \"with\",\n\t\t\"data\": [ 22,24,25 ]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 351,\n       \"name\": \"hoanghoang123\",\n       \"unit_id\": 30,\n       \"start_value\": 13323312,\n       \"target_value\": 13333213213,\n       \"kr_type\": \"output\"\n    }\n\t],\n\t\"list_aligned_object_id\": [  ]\n}"
+        "text": "{\n\t\"object_id\": 127,\n\t\"name\": \"33333ưedwererw\",\n\t\"object_type\": \"khat-vong\",\n\t\"period_id\": 38,\n\t\"display_with\": {\n\t\t\"type\": \"with\",\n\t\t\"data\": [ 22,24,25 ]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 351,\n       \"name\": \"hoanghoang123\",\n       \"unit_id\": 30,\n       \"start_value\": 13323312,\n       \"target_value\": 13333213213,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n       \"name\": \"Kr 2\",\n       \"unit_id\": 30,\n       \"start_value\": 13323312,\n       \"target_value\": 13333213213,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n       \"name\": \"Kr 3\",\n       \"unit_id\": 30,\n       \"start_value\": 13323312,\n       \"target_value\": 13333213213,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n       \"name\": \"Kr 4\",\n       \"unit_id\": 30,\n       \"start_value\": 13323312,\n       \"target_value\": 13333213213,\n       \"kr_type\": \"output\"\n    }\n\t],\n\t\"list_aligned_object_id\": [  ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -415,7 +415,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"aaeuaaf99016452ca63c1386c245682n\"\n}"
+        "text": "{\n\t\"code\": \"456g8a76e9be4cb9b2a014e05e4c311m\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -470,12 +470,50 @@
         {
           "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
           "name": "Authorization",
-          "value": "{{ _.access_token_hoang }}",
+          "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
       "authentication": {},
       "metaSortKey": -1714101692156,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_98aedcce16674d8b93670d7e287dc62f",
+      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
+      "modified": "1637671845661",
+      "created": 1719198601803,
+      "url": "{{ _.host }}/public/sign-up",
+      "name": "Đăng kí",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"123123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713855686273.8047,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
@@ -496,7 +534,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 99\n}"
+        "text": "{\n\t\"period_id\": 4\n}"
       },
       "parameters": [],
       "headers": [
@@ -546,7 +584,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 234\n}"
+        "text": "{\n\t\"object_id\": 9\n}"
       },
       "parameters": [],
       "headers": [
@@ -584,7 +622,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 234,\n\t\"is_draft\": true,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 503,\n\t\t\t\"checkin_value\": 40,\n\t\t\t\"problem_solution\": \"Chien ngu\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Công việc 123\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Công việc 345\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Công việc 567\"\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 504,\n\t\t\t\"checkin_value\": 50,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Công việc 111\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Công việc 222\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Công việc 333\"\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 505,\n\t\t\t\"checkin_value\": 60,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-next\",\n\t\t\t\"confidence_level\": \"very-confidence\",\n\t\t\t\"progress_speed\": \"very-fast\",\n\t\t\t\"schedule_time\": \"2024-01-30 15:56:01.413057+00\"\n\t\t}\n}"
+        "text": "{\n\t\"object_id\": 9,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 20,\n\t\t\t\"checkin_value\": 40,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [ 97, 98, 99 ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [],\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 21,\n\t\t\t\"checkin_value\": 50,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [ 91, 92 ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 22,\n\t\t\t\"checkin_value\": 60,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [ 93, 94 ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-next\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"schedule_time\": \"2024-08-30 15:56:01.413057+00\"\n\t\t}\n}"
       },
       "parameters": [],
       "headers": [
@@ -622,7 +660,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 234,\n\t\"participant_id\": 24\n}"
+        "text": "{\n\t\"object_id\": 9,\n\t\"participant_id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -660,7 +698,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 234,\n\t\"kr_id\": 503\n}"
+        "text": "{\n\t\"object_id\": 9,\n\t\"kr_id\": 21\n}"
       },
       "parameters": [],
       "headers": [
@@ -812,7 +850,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 234,\n\t\"kr_id\": 503\n}"
+        "text": "{\n\t\"object_id\": 9,\n\t\"kr_id\": 20\n}"
       },
       "parameters": [],
       "headers": [
@@ -862,7 +900,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 34,\n\t\"kr_id\": 84,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 8\",\n\t\t\t\"participant_id\": [ 25 ],\n\t\t\t\"status_id\": 57,\n\t\t\t\"priority_id\": 19,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 9\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 57,\n\t\t\t\"priority_id\": 19,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 10\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 57,\n\t\t\t\"priority_id\": 18,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 9,\n\t\"kr_id\": 20,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 567\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 2,\n\t\t\t\"priority_id\": 1,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t\t{\n\t\t\t\"name\": \"Công việc 789\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 2,\n\t\t\t\"priority_id\": 1,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 999\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 2,\n\t\t\t\"priority_id\": 1,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -900,7 +938,7 @@
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 15\n}"
+        "text": "{\n\t\"task_id\": 51\n}"
       },
       "parameters": [],
       "headers": [
@@ -938,7 +976,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 14,\n\t\"participant_id\": [ 25,  22 ]\n}"
+        "text": "{\n\t\"task_id\": 55,\n\t\"participant_id\": [ 1,  3 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1014,7 +1052,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 13,\n\t\"status_id\": 12\n}"
+        "text": "{\n\t\"task_id\": 55,\n\t\"status_id\": 5\n}"
       },
       "parameters": [],
       "headers": [
@@ -1052,7 +1090,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 4,\n\t\"priority_id\": 1\n}"
+        "text": "{\n\t\"task_id\": 55,\n\t\"priority_id\": 4\n}"
       },
       "parameters": [],
       "headers": [
@@ -1090,7 +1128,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 13, 14 ],\n\t\"participant_id\": [ 24, 22 ]\n}"
+        "text": "{\n\t\"list_task\": [ 50, 52 ],\n\t\"participant_id\": [ 1,3 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1128,7 +1166,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 13, 14 ],\n\t\"status_id\": 5\n}"
+        "text": "{\n\t\"list_task\": [ 617, 618, 621 ],\n\t\"status_id\": 76\n}"
       },
       "parameters": [],
       "headers": [
@@ -1166,7 +1204,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 13, 14 ],\n\t\"priority_id\": 5\n}"
+        "text": "{\n\t\"list_task\": [ 617, 618, 621 ],\n\t\"priority_id\": 30\n}"
       },
       "parameters": [],
       "headers": [
@@ -1204,7 +1242,7 @@
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 9, 10 ]\n}"
+        "text": "{\n\t\"list_task\": [ 64, 65 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1242,7 +1280,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 13,\n\t\"progress\": 60\n}"
+        "text": "{\n\t\"task_id\": 12,\n\t\"progress\": 100\n}"
       },
       "parameters": [],
       "headers": [
@@ -1280,7 +1318,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16,\n  \"url\": \"https://smitvietnam.larksuite.com/base/W8vEbGZi4aBbvpsObC4urV7Ssqf?table=tblZfz13tTY7RMwe&view=vewIX0SJpb\"\n}\n"
+        "text": "{\n\t\"object_id\": 9,\n  \"url\": \"https://smitvietnam.larksuite.com/base/W8vEbGZi4aBbvpsObC4urV7Ssqf?table=tblZfz13tTY7RMwe&view=vewIX0SJpb\"\n}\n"
       },
       "parameters": [],
       "headers": [
@@ -1314,11 +1352,11 @@
       "created": 1718092296851,
       "url": "{{ _.host }}/okr/task/link-field",
       "name": "Liên kết Field",
-      "description": "",
+      "description": "```\n\t\t\t\"db_field\": \"field_name\" - Tên công viêc\n\n\t\t\t\"db_field\": \"field_start_time\" - Ngày bắt đầu\n\n\t\t\t\"db_field\": \"field_end_time\" - Ngày kết thuc\n\n\t\t\t\"db_field\": \"field_task_note\" - Ghi chú\n\n\t\t\t\"db_field\": \"field_user\" - Người sở hữu\n\n\t\t\t\"db_field\": \"field_participant_task\" - Người theo dõi\n\n\t\t\t\"db_field\": \"field_priority\" - Mức độ ưu tiên\n\n\t\t\t\"db_field\": \"field_status\" - Trạng thái\n\n\t\t\t\"db_field\": \"field_progress\" - Tiến độ\n\n\t\t\t\"db_field\": \"field_kr_id\" - Kr_id\n\n\t\t\t\"db_field\": \"field_key_result\" - cây rì dăn\n\n```",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16,\n\t\"list_field\": [\n\t\t{\n\t\t\t\"db_field\": \"field_name\",\n\t\t\t\"lark_field_id\": \"fldsLNwISb\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_start_time\",\n\t\t\t\"lark_field_id\": \"fld1fKTh3E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_end_time\",\n\t\t\t\"lark_field_id\": \"fld9sFkCDd\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_task_note\",\n\t\t\t\"lark_field_id\": \"fldKkc6Nd3\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_user\",\n\t\t\t\"lark_field_id\": \"fldB9ga2xp\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_participant_task\",\n\t\t\t\"lark_field_id\": \"fldBDgSRpG\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_priority\",\n\t\t\t\"lark_field_id\": \"fld2jdbS2E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_status\",\n\t\t\t\"lark_field_id\": \"fldopO5wYn\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_progress\",\n\t\t\t\"lark_field_id\": \"fldmDx9DFi\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_kr_id\",\n\t\t\t\"lark_field_id\": \"flddHnHGOL\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_key_result\",\n\t\t\t\"lark_field_id\": \"fld5liby8z\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 9,\n\t\"list_field\": [\n\t\t{\n\t\t\t\"db_field\": \"field_name\",\n\t\t\t\"lark_field_id\": \"fldsLNwISb\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_start_time\",\n\t\t\t\"lark_field_id\": \"fld1fKTh3E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_end_time\",\n\t\t\t\"lark_field_id\": \"fld9sFkCDd\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_task_note\",\n\t\t\t\"lark_field_id\": \"fldKkc6Nd3\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_user\",\n\t\t\t\"lark_field_id\": \"fldB9ga2xp\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_participant_task\",\n\t\t\t\"lark_field_id\": \"fldBDgSRpG\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_priority\",\n\t\t\t\"lark_field_id\": \"fld2jdbS2E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_status\",\n\t\t\t\"lark_field_id\": \"fldopO5wYn\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_progress\",\n\t\t\t\"lark_field_id\": \"fldmDx9DFi\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_kr_id\",\n\t\t\t\"lark_field_id\": \"flddHnHGOL\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_key_result\",\n\t\t\t\"lark_field_id\": \"fld5liby8z\"\n\t\t}\n\t]\n}\n"
       },
       "parameters": [],
       "headers": [
@@ -1356,7 +1394,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 50,\n\t\"name\": \"Công việc 7\",\n\t\"participant_id\": [  25, 24 ],\n\t\"status_id\": 22,\n\t\"priority_id\": 5,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
+        "text": "{\n\t\"task_id\": 51,\n\t\"name\": \"Công việc 777\",\n\t\"participant_id\": [ ],\n\t\"status_id\": 8,\n\t\"priority_id\": 4,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1394,7 +1432,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 234,\n\t\"kr_id\": 503,\n\t\"list_task_checkin\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 888\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 999\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 1000\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 9,\n\t\"kr_id\": 20,\n\t\"list_task_checkin\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 888\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -2219,7 +2257,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16\n}"
+        "text": "{\n\t\"object_id\": 9\n}"
       },
       "parameters": [],
       "headers": [
@@ -2257,7 +2295,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"priority\": \"P1\",\n\t\"color\": 123\n}"
+        "text": "{\n\t\"priority\": \"P1\",\n\t\"color\": \"#123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2307,7 +2345,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16\n}"
+        "text": "{\n\t\"object_id\": 9\n}"
       },
       "parameters": [],
       "headers": [
@@ -2418,7 +2456,7 @@
       "name": "Base Environment",
       "data": {
         "host": "http://dev.smit.team:6840",
-        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMywib3duZXJfdHlwZSI6ImJ1c2luZXNzIiwiaWF0IjoxNzE3NjAzMTA5LCJleHAiOjE3MTgyMDc5MDl9.fFzS9Yd3j9rv6G9fyfignoeIhSU1hgmBPlcdW0jAPsM",
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTkwNTQ4NTgsImV4cCI6MTcxOTY1OTY1OH0.1dXJQxBJGB8YlWX8AGrff1xLAVhB-4LDun407DhRLGo",
         "access_token_hai": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyNCwiaWF0IjoxNzE3MjI2MDg2LCJleHAiOjE3MTc4MzA4ODZ9.T6qFd0kz7l6Ys7zaUAMRDsv5spF5CDjVzHeHDKBrhIU",
         "access_token_chien": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwiaWF0IjoxNzE3Mzk4MzMyLCJleHAiOjE3MTgwMDMxMzJ9.0bqMMz1o9IzIjG1qKViq55SIJGhCf8wK6g5hEZYwTkY",
         "access_token_hoang": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyOCwiaWF0IjoxNzE4ODIzNTk3LCJleHAiOjE3MTk0MjgzOTd9.OitmyWDNTetyDR-eQXo_y2Bz8K-t8ZHmWsEeQkwY2XU"
