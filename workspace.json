@@ -900,7 +900,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 9,\n\t\"kr_id\": 20,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 567\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 2,\n\t\t\t\"priority_id\": 1,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t\t{\n\t\t\t\"name\": \"Công việc 789\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 2,\n\t\t\t\"priority_id\": 1,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 999\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 2,\n\t\t\t\"priority_id\": 1,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 9,\n\t\"kr_id\": 20,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 567\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 13,\n\t\t\t\"priority_id\": 5,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1450,6 +1450,44 @@
       ],
       "authentication": {},
       "metaSortKey": -1713227687905.8037,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_eafb5e0ce4a54e48a756624594cb2576",
+      "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
+      "modified": "1637671845661",
+      "created": 1719335700453,
+      "url": "{{ _.host }}/okr/task/list-field",
+      "name": "Hiện danh sách Field",
+      "description": "```\n\t\t\t\"db_field\": \"field_name\" - Tên công viêc\n\n\t\t\t\"db_field\": \"field_start_time\" - Ngày bắt đầu\n\n\t\t\t\"db_field\": \"field_end_time\" - Ngày kết thuc\n\n\t\t\t\"db_field\": \"field_task_note\" - Ghi chú\n\n\t\t\t\"db_field\": \"field_user\" - Người sở hữu\n\n\t\t\t\"db_field\": \"field_participant_task\" - Người theo dõi\n\n\t\t\t\"db_field\": \"field_priority\" - Mức độ ưu tiên\n\n\t\t\t\"db_field\": \"field_status\" - Trạng thái\n\n\t\t\t\"db_field\": \"field_progress\" - Tiến độ\n\n\t\t\t\"db_field\": \"field_kr_id\" - Kr_id\n\n\t\t\t\"db_field\": \"field_key_result\" - cây rì dăn\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713112903898.9312,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
@@ -2131,7 +2169,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"status\": \"Doneeeee\",\n\t\"color\": \"#123\"\n}"
+        "text": "{\n\t\"status\": \"Chiến ngu\",\n\t\"color\": \"#123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2295,7 +2333,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"priority\": \"P1\",\n\t\"color\": \"#123\"\n}"
+        "text": "{\n\t\"priority\": \"Chiến Ngu\",\n\t\"color\": \"#123\"\n}"
       },
       "parameters": [],
       "headers": [
