@@ -486,234 +486,6 @@
       "_type": "request"
     },
     {
-      "_id": "req_98aedcce16674d8b93670d7e287dc62f",
-      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
-      "modified": "1637671845661",
-      "created": 1719198601803,
-      "url": "{{ _.host }}/public/sign-up",
-      "name": "Đăng kí",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"123123\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713855686273.8047,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_c7ddb88f6f7f41b797dfc143d53824ce",
-      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
-      "modified": "1637671845661",
-      "created": 1719396679607,
-      "url": "{{ _.host }}/public/verify-email",
-      "name": "Xác nhận Email",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"verification_code\": 538900\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713732683332.707,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_7fe1f2ef5a2745eaaf6a9df171a593ed",
-      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
-      "modified": "1637671845661",
-      "created": 1719396854152,
-      "url": "{{ _.host }}/public/sign-in",
-      "name": "Đăng nhập",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"123123\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713732683282.707,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_ee99db6a3557427c96c9745fdac4e1ee",
-      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
-      "modified": "1637671845661",
-      "created": 1719397103833,
-      "url": "{{ _.host }}/auth/sync-custom-app",
-      "name": "Đồng bộ với Custom App",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"app_id\": \"123123\",\n\t\"app_secret\": \"123123\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713671181837.1582,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_22d6443d2f52486dbfebd42423997357",
-      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
-      "modified": "1637671845661",
-      "created": 1719807085978,
-      "url": "{{ _.host }}/public/resend-code",
-      "name": "Gửi lại code",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713701932559.9326,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_c5001d1afadb4a9184015cc27ec0a181",
-      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
-      "modified": "1637671845661",
-      "created": 1719818067096,
-      "url": "{{ _.host }}/auth/create-business",
-      "name": "Tạo doanh nghiệp",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"123123\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1713640431114.3838,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
       "_id": "req_549435d0a23740f187202f23754b99b8",
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
@@ -2465,6 +2237,334 @@
       ],
       "authentication": {},
       "metaSortKey": 1200,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_98aedcce16674d8b93670d7e287dc62f",
+      "parentId": "fld_ecfd6c5d598a49e3bc5af0552d990786",
+      "modified": "1637671845661",
+      "created": 1719198601803,
+      "url": "{{ _.host }}/public/sign-up",
+      "name": "Đăng kí",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"huyhoang916.tlu@gmail.com\",\n\t\"password\": \"12311\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1716962188865,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_ecfd6c5d598a49e3bc5af0552d990786",
+      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
+      "modified": "1637671845661",
+      "created": 1719822685524,
+      "name": "Đăng ký - Đăng nhập",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1719822685524,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_c7ddb88f6f7f41b797dfc143d53824ce",
+      "parentId": "fld_ecfd6c5d598a49e3bc5af0552d990786",
+      "modified": "1637671845661",
+      "created": 1719396679607,
+      "url": "{{ _.host }}/public/verify-email",
+      "name": "Xác nhận Email",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"verification_code\": 538900\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1716962188840,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7fe1f2ef5a2745eaaf6a9df171a593ed",
+      "parentId": "fld_ecfd6c5d598a49e3bc5af0552d990786",
+      "modified": "1637671845661",
+      "created": 1719396854152,
+      "url": "{{ _.host }}/public/sign-in",
+      "name": "Đăng nhập",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"123123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1716962188815,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_22d6443d2f52486dbfebd42423997357",
+      "parentId": "fld_ecfd6c5d598a49e3bc5af0552d990786",
+      "modified": "1637671845661",
+      "created": 1719807085978,
+      "url": "{{ _.host }}/public/resend-code",
+      "name": "Gửi lại code",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1716962188827.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_40875af01e5243d7a9f7d80f6c3f1096",
+      "parentId": "fld_ecfd6c5d598a49e3bc5af0552d990786",
+      "modified": "1637671845661",
+      "created": 1719822722443,
+      "url": "{{ _.host }}/public/forget-password",
+      "name": "Quên mật khẩu",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1715531940510.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_62428508152b4d408c11d1fea29875c4",
+      "parentId": "fld_ecfd6c5d598a49e3bc5af0552d990786",
+      "modified": "1637671845661",
+      "created": 1719822746783,
+      "url": "{{ _.host }}/public/change-password",
+      "name": "Đổi mật khẩu",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"huyhoang916.tlu@gmail.com\",\n\t\"password\": \"12311\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1714816816358.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ee99db6a3557427c96c9745fdac4e1ee",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1719397103833,
+      "url": "{{ _.host }}/auth/sync-custom-app",
+      "name": "Đồng bộ với Custom App",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"app_id\": \"123123\",\n\t\"app_secret\": \"123123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795641,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_83015a7ad6974c239a18b51ef331e762",
+      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
+      "modified": "1637671845661",
+      "created": 1719822781631,
+      "name": "Doanh nghiệp",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1716962188865,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_c5001d1afadb4a9184015cc27ec0a181",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1719818067096,
+      "url": "{{ _.host }}/auth/create-business",
+      "name": "Tạo doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"123123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795691,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
