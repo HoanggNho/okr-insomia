@@ -2257,7 +2257,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang916.tlu@gmail.com\",\n\t\"password\": \"12311\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"123123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2307,7 +2307,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"verification_code\": 538900\n}"
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"verification_code\": 927332\n}"
       },
       "parameters": [],
       "headers": [
@@ -2345,7 +2345,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"123123\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"12311\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2459,7 +2459,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang916.tlu@gmail.com\",\n\t\"password\": \"12311\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"12311\",\n\t\"verification_code\": 729784\n}"
       },
       "parameters": [],
       "headers": [
@@ -2477,6 +2477,44 @@
       ],
       "authentication": {},
       "metaSortKey": -1714816816358.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1f55a184f9dd4b538ba4f40d7356625f",
+      "parentId": "fld_ecfd6c5d598a49e3bc5af0552d990786",
+      "modified": "1637671845661",
+      "created": 1719823981906,
+      "url": "{{ _.host }}/public/verify-email-change-password",
+      "name": "Gửi lại code khi quên mật khẩu",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"verification_code\": 729784\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1715174378434.375,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
