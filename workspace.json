@@ -2257,7 +2257,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"123123\",\n\t\"first_name\": \"Chien\",\n\t\"last_name\": \"Ngu\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang19996.tlu@gmail.com\",\n\t\"password\": \"123123\",\n\t\"first_name\": \"Chien\",\n\t\"last_name\": \"Ngu\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2307,7 +2307,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"verification_code\": 386081\n}"
+        "text": "{\n\t\"email\": \"huyhoang19996.tlu@gmail.com\",\n\t\"verification_code\": 530222\n}"
       },
       "parameters": [],
       "headers": [
@@ -2585,7 +2585,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"SMIT Test 123\"\n}"
+        "text": "{\n\t\"name\": \"SMIT Test 12345\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2617,13 +2617,13 @@
       "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
       "modified": "1637671845661",
       "created": 1719915434695,
-      "url": "{{ _.host }}/okr/business/business-invitation",
+      "url": "{{ _.host }}/okr/business/user-invitation",
       "name": "Mời vào doanh nghiệp",
       "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang19996.tlu@gmail.com\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2678,7 +2678,7 @@
         }
       ],
       "authentication": {},
-      "metaSortKey": -1719822795678.5,
+      "metaSortKey": -1719822795687.875,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
@@ -2699,7 +2699,7 @@
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"id\": 4\n}"
+        "text": "{\n\t\"id\": 6,\n\t\"name\": \"SMIT Test 12345\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2716,7 +2716,7 @@
         }
       ],
       "authentication": {},
-      "metaSortKey": -1719822795672.25,
+      "metaSortKey": -1719822795686.3125,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
@@ -2813,7 +2813,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"id\": 2\n}"
+        "text": "{\n\t\"id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -2831,6 +2831,82 @@
       ],
       "authentication": {},
       "metaSortKey": -1719822795683.1875,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_90c19377986f4da3910e3674e4778a3f",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1719989919691,
+      "url": "{{ _.host }}/okr/business/accept-invitation",
+      "name": "Chấp nhận lời mời vào doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"huyhoang19996.tlu@gmail.com\",\n\t\"verification_code\": 919298\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795653.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_6ce53a9c82c74071a8b857f3ba66bfb0",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1719991568712,
+      "url": "{{ _.host }}/okr/business/user",
+      "name": "Xóa thành viên",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 70\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795673.8125,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
