@@ -496,7 +496,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 1\n}"
+        "text": "{\n\t\"period_id\": 1,\n\t\"aligned_user_id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -546,7 +546,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 114\n}"
+        "text": "{\n\t\"object_id\": 128,\n\t\"aligned_user_id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -812,7 +812,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 9,\n\t\"kr_id\": 20\n}"
+        "text": "{\n\t\"object_id\": 114,\n\t\"kr_id\": 256,\n\t\"aligned_user_id\": null\n}"
       },
       "parameters": [],
       "headers": [
@@ -862,7 +862,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 114,\n\t\"kr_id\": 256,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 56788\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 13,\n\t\t\t\"priority_id\": 5,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 114,\n\t\"kr_id\": 256,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 56788\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 15,\n\t\t\t\"priority_id\": 15,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -900,7 +900,7 @@
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 51\n}"
+        "text": "{\n\t\"task_id\": 171\n}"
       },
       "parameters": [],
       "headers": [
@@ -938,7 +938,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 55,\n\t\"participant_id\": [ 1,  3 ]\n}"
+        "text": "{\n\t\"task_id\": 175,\n\t\"participant_id\": [ 1,  3 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1014,7 +1014,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 55,\n\t\"status_id\": 5\n}"
+        "text": "{\n\t\"task_id\": 175,\n\t\"status_id\": 16\n}"
       },
       "parameters": [],
       "headers": [
@@ -1052,7 +1052,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 55,\n\t\"priority_id\": 4\n}"
+        "text": "{\n\t\"task_id\": 175,\n\t\"priority_id\": 16\n}"
       },
       "parameters": [],
       "headers": [
@@ -1090,7 +1090,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 50, 52 ],\n\t\"participant_id\": [ 1,3 ]\n}"
+        "text": "{\n\t\"list_task\": [ 175, 176 ],\n\t\"participant_id\": [ 1,3 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1128,7 +1128,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 617, 618, 621 ],\n\t\"status_id\": 76\n}"
+        "text": "{\n\t\"list_task\": [ 175, 176 ],\n\t\"status_id\": 16\n}"
       },
       "parameters": [],
       "headers": [
@@ -1166,7 +1166,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 617, 618, 621 ],\n\t\"priority_id\": 30\n}"
+        "text": "{\n\t\"list_task\": [ 175, 176 ],\n\t\"priority_id\": 16\n}"
       },
       "parameters": [],
       "headers": [
@@ -1204,7 +1204,7 @@
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 64, 65 ]\n}"
+        "text": "{\n\t\"list_task\": [ 169, 170 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1242,7 +1242,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 12,\n\t\"progress\": 100\n}"
+        "text": "{\n\t\"task_id\": 175,\n\t\"progress\": 80\n}"
       },
       "parameters": [],
       "headers": [
@@ -1356,7 +1356,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 51,\n\t\"name\": \"Công việc 777\",\n\t\"participant_id\": [ ],\n\t\"status_id\": 8,\n\t\"priority_id\": 4,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
+        "text": "{\n\t\"task_id\": 172,\n\t\"name\": \"Công việc 777\",\n\t\"participant_id\": [ ],\n\t\"status_id\": 15,\n\t\"priority_id\": 15,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1394,7 +1394,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 9,\n\t\"kr_id\": 20,\n\t\"list_task_checkin\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 888\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 114,\n\t\"kr_id\": 256,\n\t\"list_task_checkin\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 888\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -2257,7 +2257,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"123123\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"123123\",\n\t\"first_name\": \"Chien\",\n\t\"last_name\": \"Ngu\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2307,7 +2307,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"verification_code\": 927332\n}"
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"verification_code\": 386081\n}"
       },
       "parameters": [],
       "headers": [
@@ -2492,7 +2492,7 @@
       "modified": "1637671845661",
       "created": 1719823981906,
       "url": "{{ _.host }}/public/verify-email-change-password",
-      "name": "Gửi lại code khi quên mật khẩu",
+      "name": "Xác nhận mail khi quên mật khẩu",
       "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
       "method": "POST",
       "body": {
@@ -2529,13 +2529,13 @@
       "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
       "modified": "1637671845661",
       "created": 1719397103833,
-      "url": "{{ _.host }}/auth/sync-custom-app",
+      "url": "{{ _.host }}/okr/business/sync-custom-app",
       "name": "Đồng bộ với Custom App",
       "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"app_id\": \"123123\",\n\t\"app_secret\": \"123123\"\n}"
+        "text": "{\n\t\"app_id\": \"cli_a6f99aaa7238d009\",\n\t\"app_secret\": \"5hmQisRLgDKGYD1UqDrJgfEMjGhjmRuv\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2579,13 +2579,13 @@
       "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
       "modified": "1637671845661",
       "created": 1719818067096,
-      "url": "{{ _.host }}/auth/create-business",
+      "url": "{{ _.host }}/okr/business/business",
       "name": "Tạo doanh nghiệp",
       "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"123123\"\n}"
+        "text": "{\n\t\"name\": \"SMIT Test 123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2613,6 +2613,234 @@
       "_type": "request"
     },
     {
+      "_id": "req_5a3374cf98494356a3d69996986cd5a5",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1719915434695,
+      "url": "{{ _.host }}/okr/business/business-invitation",
+      "name": "Mời vào doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795666,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3015354a09164fcfa2341ee405070e3b",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1719974388466,
+      "url": "{{ _.host }}/okr/business/business",
+      "name": "Sửa doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 4,\n\t\"name\": \"SMIT Test 12345\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795678.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_19d0750fa0714715b61e8bf7edcb687b",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1719974398531,
+      "url": "{{ _.host }}/okr/business/business",
+      "name": "Xóa doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 4\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795672.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_42ef4be75ca743f49e7844a35c6bb3c8",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1719974935764,
+      "url": "{{ _.host }}/okr/business/business",
+      "name": "Hiển thị danh sách doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795684.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_aa1ac7fc649d4c43838cb4763cd0194e",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1719976206659,
+      "url": "{{ _.host }}/okr/business/user",
+      "name": "Hiển thị danh sách thành viên",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 2\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795681.625,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4191ff69310b4dc39b7df634b061a4ad",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1719977693600,
+      "url": "{{ _.host }}/okr/business/info-business",
+      "name": "Hiển thị thông tin doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 2\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795683.1875,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_605f7e29336742f1ab119cc3458dea28",
       "parentId": "fld_a1ea25bde0cf4bd9b429005cec9caf01",
       "modified": "1637671845661",
@@ -2623,7 +2851,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"status\": \"Chiến ngu\",\n\t\"color\": \"#123\"\n}"
+        "text": "{\n\t\"status\": \"Chiến ngu 1\",\n\t\"color\": \"#123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2749,7 +2977,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 9\n}"
+        "text": "{\n\t\"object_id\": 114\n}"
       },
       "parameters": [],
       "headers": [
@@ -2787,7 +3015,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"priority\": \"Chiến Ngu\",\n\t\"color\": \"#123\"\n}"
+        "text": "{\n\t\"priority\": \"Chiến Ngu 1\",\n\t\"color\": \"#123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2837,7 +3065,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 9\n}"
+        "text": "{\n\t\"object_id\": 114\n}"
       },
       "parameters": [],
       "headers": [
