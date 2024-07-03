@@ -812,7 +812,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 114,\n\t\"kr_id\": 256,\n\t\"aligned_user_id\": null\n}"
+        "text": "{\n\t\"object_id\": 117,\n\t\"kr_id\": 278,\n\t\"aligned_user_id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -824,7 +824,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_hai }}",
           "description": ""
         }
       ],
@@ -2623,7 +2623,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang19996.tlu@gmail.com\"\n}"
+        "text": "{\n\t\"list_email\": [\n\t\t{\n\t\t\t\"email\": \"chienphuong204@gmail.com\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"ngochai1121a@gmail.com\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -2851,7 +2851,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang19996.tlu@gmail.com\",\n\t\"verification_code\": 919298\n}"
+        "text": "{\n\t\"verification_code\": \"fd43f43f4f43f43f4f3\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2907,6 +2907,44 @@
       ],
       "authentication": {},
       "metaSortKey": -1719822795673.8125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_789a6735cc4b4742a195019fbc19ec62",
+      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
+      "modified": "1637671845661",
+      "created": 1720003302592,
+      "url": "{{ _.host }}/okr/business/invitation",
+      "name": "Hiển thị thông tin doanh nghiệp khi gửi code",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"code\": \"568899\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795659.75,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
@@ -3253,7 +3291,7 @@
       "data": {
         "host": "http://dev.smit.team:6840",
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTkzNTUxMTEsImV4cCI6MTcxOTk1OTkxMX0.xuasysxQQaBayFgQKA04bkpZFBamWCrHm2BgJq-Ui3I",
-        "access_token_hai": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyNCwiaWF0IjoxNzE3MjI2MDg2LCJleHAiOjE3MTc4MzA4ODZ9.T6qFd0kz7l6Ys7zaUAMRDsv5spF5CDjVzHeHDKBrhIU",
+        "access_token_hai": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJvd25lcl90eXBlIjoiYnVzaW5lc3MiLCJpYXQiOjE3MjAwMDE2NTQsImV4cCI6MTcyMDYwNjQ1NH0.Zv_H3ChBumLPGVN2kVObgbd22EAnUP8PhkjMjes8lok",
         "access_token_chien": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwiaWF0IjoxNzE3Mzk4MzMyLCJleHAiOjE3MTgwMDMxMzJ9.0bqMMz1o9IzIjG1qKViq55SIJGhCf8wK6g5hEZYwTkY",
         "access_token_hoang": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyOCwiaWF0IjoxNzE4ODIzNTk3LCJleHAiOjE3MTk0MjgzOTd9.OitmyWDNTetyDR-eQXo_y2Bz8K-t8ZHmWsEeQkwY2XU"
       },
