@@ -2257,7 +2257,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang19996.tlu@gmail.com\",\n\t\"password\": \"123123\",\n\t\"first_name\": \"Chien\",\n\t\"last_name\": \"Ngu\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang1996.tlu@gmail.com\",\n\t\"password\": \"123123\",\n\t\"first_name\": \"Huy\",\n\t\"last_name\": \"Hoang\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2307,7 +2307,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang19996.tlu@gmail.com\",\n\t\"verification_code\": 530222\n}"
+        "text": "{\n\t\"email\": \"huyhoang1996.tlu@gmail.com\",\n\t\"verification_code\": 450436\n}"
       },
       "parameters": [],
       "headers": [
@@ -2345,7 +2345,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"12311\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang1996.tlu@gmail.com\",\n\t\"password\": \"123123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2383,7 +2383,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang1996.tlu@gmail.com\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2421,7 +2421,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang1996.tlu@gmail.com\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2459,7 +2459,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"12311\",\n\t\"verification_code\": 729784\n}"
+        "text": "{\n\t\"email\": \"huyhoang1996.tlu@gmail.com\",\n\t\"password\": \"123123\",\n\t\"verification_code\": 103173\n}"
       },
       "parameters": [],
       "headers": [
@@ -2775,7 +2775,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"id\": 2\n}"
+        "text": "{\n\t\"id\": 7\n}"
       },
       "parameters": [],
       "headers": [
@@ -2813,7 +2813,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"id\": 1\n}"
+        "text": "{\n\t\"id\": 7\n}"
       },
       "parameters": [],
       "headers": [
@@ -2927,7 +2927,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"568899\"\n}"
+        "text": "{\n\t\"code\": \"VOVcVFotrPhuX5CMS4GgH2Rexnh8n3\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -3290,7 +3290,7 @@
       "name": "Base Environment",
       "data": {
         "host": "http://dev.smit.team:6840",
-        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTkzNTUxMTEsImV4cCI6MTcxOTk1OTkxMX0.xuasysxQQaBayFgQKA04bkpZFBamWCrHm2BgJq-Ui3I",
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJpYXQiOjE3MjAwMjk0NzcsImV4cCI6MTcyMDYzNDI3N30.Y3lv8Tmc3BvHZX07Zsr4UF0ihcsWyTbbhbvSpFfcpNw",
         "access_token_hai": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJvd25lcl90eXBlIjoiYnVzaW5lc3MiLCJpYXQiOjE3MjAwMDE2NTQsImV4cCI6MTcyMDYwNjQ1NH0.Zv_H3ChBumLPGVN2kVObgbd22EAnUP8PhkjMjes8lok",
         "access_token_chien": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwiaWF0IjoxNzE3Mzk4MzMyLCJleHAiOjE3MTgwMDMxMzJ9.0bqMMz1o9IzIjG1qKViq55SIJGhCf8wK6g5hEZYwTkY",
         "access_token_hoang": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyOCwiaWF0IjoxNzE4ODIzNTk3LCJleHAiOjE3MTk0MjgzOTd9.OitmyWDNTetyDR-eQXo_y2Bz8K-t8ZHmWsEeQkwY2XU"
