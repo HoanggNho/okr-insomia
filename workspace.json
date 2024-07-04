@@ -55,13 +55,13 @@
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
       "created": 1715058227438,
-      "url": "{{ _.host }}/okr/okrs/add-okr",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/add-okr",
       "name": "Tạo OKR",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Mục tiêu 3\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": []\n\t},\n\t\"period_id\": 6,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 4,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 4,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 4,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
+        "text": "{\n\t\"name\": \"Mục tiêu 3\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": []\n\t},\n\t\"period_id\": 2,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -105,13 +105,13 @@
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
       "created": 1715071829753,
-      "url": "{{ _.host }}/okr/okrs/get-okr",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/get-okr",
       "name": "Hiển thị danh sách OKR",
       "description": "```\nobject_type gồm ['hoc-tap','cam-ket','khat-vong']\n\n```\n```\ndisplay_with:\ntype bao gồm ['private','public','with']\nkhi type ==='private' hoặc type ==='public' thì chỉ cần gửi data: []\nkhi type === 'with' thì user_id sẽ được gửi trong data: [1,2,3,...]\n\n```\n```\nkr_type gồm ['input','output','outcome']\n```\n```\nalign_up: người và mục tiêu nối ở trên\nalign_down: người và mục tiêu nối ở dưới\n```\n\n",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 6,\n\t\"aligned_user_id\": null\n}"
+        "text": "{\n\t\"period_id\": 2,\n\t\"aligned_user_id\": null\n}"
       },
       "parameters": [],
       "headers": [
@@ -219,7 +219,7 @@
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
       "created": 1715104346407,
-      "url": "{{ _.host }}/okr/okrs/delete-okr",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/delete-okr",
       "name": "Xóa OKR",
       "description": "",
       "method": "DELETE",
@@ -257,7 +257,7 @@
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
       "created": 1715104409093,
-      "url": "{{ _.host }}/okr/okrs/update-okr",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/update-okr",
       "name": "Chỉnh sửa OKR",
       "description": "",
       "method": "PUT",
@@ -405,6 +405,44 @@
       "_type": "request"
     },
     {
+      "_id": "req_7ca99e3353534ea78d4c600e7a34fa59",
+      "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
+      "modified": "1637671845661",
+      "created": 1716350827408,
+      "url": "{{ _.host }}/okr/okrs/notes",
+      "name": "Cập nhật notes",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"object_id\": 1,\n\t\"note\": \"123123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 1287.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_c424020d9e2f47a6987d5300b625f1af",
       "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
       "modified": "1637671845661",
@@ -458,7 +496,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"owner_type\": \"business\"\n}"
+        "text": ""
       },
       "parameters": [],
       "headers": [
@@ -1835,13 +1873,13 @@
       "parentId": "fld_9861d7e335fe45189465b2403b32b8bb",
       "modified": "1637671845661",
       "created": 1714917848371,
-      "url": "{{ _.host }}/okr/okrs/period",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/period",
       "name": "Tạo chu kỳ",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Chu kỳ 4\",\n\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n}"
+        "text": "{\n\t\"name\": \"Chu kỳ 6\",\n\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1885,7 +1923,7 @@
       "parentId": "fld_9861d7e335fe45189465b2403b32b8bb",
       "modified": "1637671845661",
       "created": 1715013495458,
-      "url": "{{ _.host }}/okr/okrs/period",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/period",
       "name": "Hiển thị danh sách chu kỳ",
       "description": "",
       "method": "GET",
@@ -1923,13 +1961,13 @@
       "parentId": "fld_9861d7e335fe45189465b2403b32b8bb",
       "modified": "1637671845661",
       "created": 1715742050725,
-      "url": "{{ _.host }}/okr/okrs/period",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/period",
       "name": "Sửa chu kỳ",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 6,\n\t\"name\": \"Chu kỳ 333\",\n\t\"start_time\": \"2024-08-10 04:05:55.984305+00\",\n\t\"end_time\": \"2024-08-12 04:05:55.984305+00\"\n}"
+        "text": "{\n\t\"period_id\": 1,\n\t\"name\": \"Chu kỳ 333\",\n\t\"start_time\": \"2024-08-10 04:05:55.984305+00\",\n\t\"end_time\": \"2024-08-12 04:05:55.984305+00\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1961,13 +1999,13 @@
       "parentId": "fld_9861d7e335fe45189465b2403b32b8bb",
       "modified": "1637671845661",
       "created": 1715742056573,
-      "url": "{{ _.host }}/okr/okrs/period",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/period",
       "name": "Xóa chu kỳ",
       "description": "",
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 7\n}"
+        "text": "{\n\t\"period_id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -1999,13 +2037,13 @@
       "parentId": "fld_722cf21628804c359b1e39d35a0bb28c",
       "modified": "1637671845661",
       "created": 1715013507713,
-      "url": "{{ _.host }}/okr/okrs/unit",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/unit",
       "name": "Tạo đơn vị",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"unit\": \"triệuu\"\n}"
+        "text": "{\n\t\"unit\": \"tỷ tỷ\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2049,7 +2087,7 @@
       "parentId": "fld_722cf21628804c359b1e39d35a0bb28c",
       "modified": "1637671845661",
       "created": 1715013511948,
-      "url": "{{ _.host }}/okr/okrs/unit",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/unit",
       "name": "Hiển thị danh sách đơn vị",
       "description": "",
       "method": "GET",
@@ -2087,13 +2125,13 @@
       "parentId": "fld_722cf21628804c359b1e39d35a0bb28c",
       "modified": "1637671845661",
       "created": 1715685724228,
-      "url": "{{ _.host }}/okr/okrs/unit",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/unit",
       "name": "Xóa đơn vị",
       "description": "",
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"id\": 5\n}"
+        "text": "{\n\t\"id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -2125,13 +2163,13 @@
       "parentId": "fld_722cf21628804c359b1e39d35a0bb28c",
       "modified": "1637671845661",
       "created": 1715742893195,
-      "url": "{{ _.host }}/okr/okrs/unit",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/unit",
       "name": "Sửa đơn vị",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"id\": 4,\n\t\"unit\": \"triệu đồng\"\n}"
+        "text": "{\n\t\"id\": 1,\n\t\"unit\": \"triệu đồng\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2159,94 +2197,6 @@
       "_type": "request"
     },
     {
-      "_id": "req_7ca99e3353534ea78d4c600e7a34fa59",
-      "parentId": "fld_567824e800f547ecb0ca6b850dfeb2f1",
-      "modified": "1637671845661",
-      "created": 1716350827408,
-      "url": "{{ _.host }}/okr/okrs/notes",
-      "name": "Cập nhật notes",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n\t\"note\": \"123123\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": 1150,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "fld_567824e800f547ecb0ca6b850dfeb2f1",
-      "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
-      "modified": "1637671845661",
-      "created": 1716350963054,
-      "name": "Notes",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -428963518325.5,
-      "_type": "request_group"
-    },
-    {
-      "_id": "req_c924517229584174a3195704ed19d9f5",
-      "parentId": "fld_567824e800f547ecb0ca6b850dfeb2f1",
-      "modified": "1637671845661",
-      "created": 1716350910787,
-      "url": "{{ _.host }}/okr/okrs/notes",
-      "name": "Xóa notes",
-      "description": "",
-      "method": "PUT",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": 1200,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
       "_id": "req_98aedcce16674d8b93670d7e287dc62f",
       "parentId": "fld_ecfd6c5d598a49e3bc5af0552d990786",
       "modified": "1637671845661",
@@ -2257,7 +2207,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang19996.tlu@gmail.com\",\n\t\"password\": \"123123\",\n\t\"first_name\": \"Huy\",\n\t\"last_name\": \"Hoang\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang199996.tlu@gmail.com\",\n\t\"password\": \"123123\",\n\t\"first_name\": \"Huy\",\n\t\"last_name\": \"Hoang\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2307,7 +2257,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang19996.tlu@gmail.com\",\n\t\"verification_code\": 887442\n}"
+        "text": "{\n\t\"email\": \"huyhoang199996.tlu@gmail.com\",\n\t\"verification_code\": 483979\n}"
       },
       "parameters": [],
       "headers": [
@@ -2383,7 +2333,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang1996.tlu@gmail.com\"\n}"
+        "text": "{\n\t\"email\": \"12345.tlu@gmail.com\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2585,7 +2535,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"SMIT Test 12345\"\n}"
+        "text": "{\n\t\"name\": \"SMIT Test 0001\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2623,7 +2573,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_email\": [\n\t\t{\n\t\t\t\"email\": \"chienphuong204@gmail.com\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"list_email\": [\n\n\t\t{\n\t\t\t\"email\": \"huyhoang1996.tlu@gmail.com\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -2851,7 +2801,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"fd43f43f4f43f43f4f3\"\n}"
+        "text": "{\n\t\"code\": \"b4OxOymE5SwoiBzcOK4HEQsRsKOjOi\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2863,7 +2813,7 @@
         {
           "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_1996 }}",
           "description": ""
         }
       ],
@@ -2921,13 +2871,51 @@
       "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
       "modified": "1637671845661",
       "created": 1720003302592,
-      "url": "{{ _.host }}/public/invitation",
+      "url": "{{ _.host }}/okr/business/invitation",
       "name": "Hiển thị thông tin doanh nghiệp khi gửi code",
       "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"uNRbT6989I9pheNkQ97DsV6LdCY1BU\"\n}"
+        "text": "{\n\t\"code\": \"6hjrurAYSwLtuWwvRqcs8Cmk3wyrg3\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token_1996 }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719822795659.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_24fba15bbd18409cae664040c3bdd6b7",
+      "parentId": "fld_f8628e8b64d14e1792085a847ecc8a3a",
+      "modified": "1637671845661",
+      "created": 1720114953903,
+      "url": "{{ _.host }}/okr/me/business",
+      "name": "Danh sách doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
       },
       "parameters": [],
       "headers": [
@@ -2944,7 +2932,133 @@
         }
       ],
       "authentication": {},
-      "metaSortKey": -1719822795659.75,
+      "metaSortKey": -1720117313735,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_f8628e8b64d14e1792085a847ecc8a3a",
+      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
+      "modified": "1637671845661",
+      "created": 1720117280058,
+      "name": "New business",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1720117280058,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_efe5698f44f64bad8e9b968c8561ce11",
+      "parentId": "fld_f8628e8b64d14e1792085a847ecc8a3a",
+      "modified": "1637671845661",
+      "created": 1720116219917,
+      "url": "{{ _.host }}/okr/me/business",
+      "name": "Tạo doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Tesst 12\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117313685,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b9015569ec3a4359972a61cce88d5595",
+      "parentId": "fld_f8628e8b64d14e1792085a847ecc8a3a",
+      "modified": "1637671845661",
+      "created": 1720125605713,
+      "url": "{{ _.host }}/okr/{{business_id}}/business/update-name",
+      "name": "Sửa tên doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Hoang\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117313635,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_09454086cb7b4ff8adaeb9af64266675",
+      "parentId": "fld_f8628e8b64d14e1792085a847ecc8a3a",
+      "modified": "1637671845661",
+      "created": 1720125650633,
+      "url": "{{ _.host }}/okr/{{business_id}}/business/delete-business",
+      "name": "Xóa doanh nghiệp",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117313585,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
@@ -3283,6 +3397,284 @@
       "_type": "request"
     },
     {
+      "_id": "req_4b07c6ee31304d07a139eaf69ea75aba",
+      "parentId": "fld_7a24f1e972e74fec8bc31bb1676d4738",
+      "modified": "1637671845661",
+      "created": 1720117444596,
+      "url": "{{ _.host }}/okr/{{business_id}}/member/invite",
+      "name": "Mời thành viên",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"list_email\": [\n\t\t{\n\t\t\t\"email\": \"huyhoang1996.tlu@gmail.com\"\n\t\t}\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117434648,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_7a24f1e972e74fec8bc31bb1676d4738",
+      "parentId": "fld_f8628e8b64d14e1792085a847ecc8a3a",
+      "modified": "1637671845661",
+      "created": 1720117427290,
+      "name": "Mời thành viên",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1720117427290,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_d4d88e55e48f439996f12b7a0f908b28",
+      "parentId": "fld_7a24f1e972e74fec8bc31bb1676d4738",
+      "modified": "1637671845661",
+      "created": 1720120192201,
+      "url": "{{ _.host }}/okr/me/accept-invitation",
+      "name": "Xác nhận lời mời",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"code\": \"kTeZNXeRHwJeVjchaLJU5Dj5e8Pyyv\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token_1996 }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117374191.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4bc8176e27fa453e98d115f1696f7e60",
+      "parentId": "fld_7a24f1e972e74fec8bc31bb1676d4738",
+      "modified": "1637671845661",
+      "created": 1720121070720,
+      "url": "{{ _.host }}/okr/me/invitation",
+      "name": "Thông tin lời mời",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"code\": \"DM9Q2ieEezjxZgNg0PewzctnwSEVSf\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117343963.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f45b769e48bc4adba0864888f5ffaac6",
+      "parentId": "fld_7a24f1e972e74fec8bc31bb1676d4738",
+      "modified": "1637671845661",
+      "created": 1720122738858,
+      "url": "{{ _.host }}/okr/{{business_id}}/member/users",
+      "name": "Danh sách thành viên ",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117328849.125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_eb4be1850eb142dfad58d13d56fc9c66",
+      "parentId": "fld_7a24f1e972e74fec8bc31bb1676d4738",
+      "modified": "1637671845661",
+      "created": 1720125136009,
+      "url": "{{ _.host }}/okr/{{business_id}}/member/users",
+      "name": "Xóa thành viên",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"user_id\": 2\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117321292.0625,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b446ed0b711a433ba44c341872d6421f",
+      "parentId": "fld_7a24f1e972e74fec8bc31bb1676d4738",
+      "modified": "1637671845661",
+      "created": 1720125874947,
+      "url": "{{ _.host }}/okr/{{business_id}}/member/invite",
+      "name": "Danh sách thành viên đã mời",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117404419.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4997d60266174fe081af1257969534da",
+      "parentId": "fld_7a24f1e972e74fec8bc31bb1676d4738",
+      "modified": "1637671845661",
+      "created": 1720127177035,
+      "url": "{{ _.host }}/okr/{{business_id}}/member/invite",
+      "name": "Hủy lời mời",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 4\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117325070.5938,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "__BASE_ENVIRONMENT_ID__",
       "parentId": "__WORKSPACE_ID__",
       "modified": "1637671845661",
@@ -3290,23 +3682,44 @@
       "name": "Base Environment",
       "data": {
         "host": "http://dev.smit.team:6840",
-        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJpYXQiOjE3MjAwMjk0NzcsImV4cCI6MTcyMDYzNDI3N30.Y3lv8Tmc3BvHZX07Zsr4UF0ihcsWyTbbhbvSpFfcpNw",
-        "access_token_hai": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJvd25lcl90eXBlIjoiYnVzaW5lc3MiLCJpYXQiOjE3MjAwMDE2NTQsImV4cCI6MTcyMDYwNjQ1NH0.Zv_H3ChBumLPGVN2kVObgbd22EAnUP8PhkjMjes8lok",
-        "access_token_chien": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwiaWF0IjoxNzE3Mzk4MzMyLCJleHAiOjE3MTgwMDMxMzJ9.0bqMMz1o9IzIjG1qKViq55SIJGhCf8wK6g5hEZYwTkY",
-        "access_token_hoang": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyOCwiaWF0IjoxNzE4ODIzNTk3LCJleHAiOjE3MTk0MjgzOTd9.OitmyWDNTetyDR-eQXo_y2Bz8K-t8ZHmWsEeQkwY2XU"
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjAxMTQzODQsImV4cCI6MTcyMDcxOTE4NH0.ffKnl6I7p0Zp8qnWEfbQNC0azbTyX7wbtzurh8svlKw",
+        "access_token_1996": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJpYXQiOjE3MjAwOTEzNDcsImV4cCI6MTcyMDY5NjE0N30.NQQ5lApzZ-dhG6ryoFI6_YtpjQaIwjFIQqvr7PCTD4w"
       },
       "dataPropertyOrder": {
         "&": [
           "host",
           "access_token",
-          "access_token_hai",
-          "access_token_chien",
-          "access_token_hoang"
+          "access_token_1996"
         ]
       },
       "color": null,
       "isPrivate": false,
       "metaSortKey": 1714101676637,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_a8ee38c385284372ac631226ebfaf935",
+      "parentId": "__BASE_ENVIRONMENT_ID__",
+      "modified": "1637671845661",
+      "created": 1720114401650,
+      "name": "dev",
+      "data": {
+        "host": "http://dev.smit.team:6840",
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjAxMTQzODQsImV4cCI6MTcyMDcxOTE4NH0.ffKnl6I7p0Zp8qnWEfbQNC0azbTyX7wbtzurh8svlKw",
+        "access_token_1996": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MjAxMjQ4MzQsImV4cCI6MTcyMDcyOTYzNH0.VQ4R8Dz5u0etg_0LK8VVpqXLRsJEX_t5NKwe93xn7u8",
+        "business_id": "278736985894421505"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "host",
+          "access_token",
+          "access_token_1996",
+          "business_id"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1720114401650,
       "_type": "environment"
     }
   ]
