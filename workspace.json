@@ -61,7 +61,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Mục tiêu 3\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": []\n\t},\n\t\"period_id\": 2,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
+        "text": "{\n\t\"name\": \"Mục tiêu 3\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"with\",\n\t\t\"data\": [ 1 ]\n\t},\n\t\"period_id\": 2,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -73,7 +73,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_1996 }}",
           "description": ""
         }
       ],
@@ -143,13 +143,13 @@
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
       "created": 1715078756440,
-      "url": "{{ _.host }}/okr/okrs/aligned-object-id",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/aligned-object-id",
       "name": "Tim mục tiêu nối theo ID",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"aligned_user_id\": 12,\n\t\"period_id\": 6\n}"
+        "text": "{\n\t\"aligned_user_id\": 5,\n\t\"period_id\": 2\n}"
       },
       "parameters": [],
       "headers": [
@@ -181,13 +181,13 @@
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
       "created": 1715094420781,
-      "url": "{{ _.host }}/okr/okrs/aligned-object-name",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/aligned-object-name",
       "name": "Tìm mục tiêu nối theo tên",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"98\",\n\t\"period_id\": 6,\n\t\"object_id\": 129\n}"
+        "text": "{\n\t\"name\": \"Hoang\",\n\t\"period_id\": 2,\n\t\"object_id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -225,7 +225,7 @@
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 131\n}"
+        "text": "{\n\t\"object_id\": 4\n}"
       },
       "parameters": [],
       "headers": [
@@ -263,7 +263,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 129,\n\t\"name\": \"33333ưedwererw\",\n\t\"object_type\": \"khat-vong\",\n\t\"period_id\": 6,\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [  ]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 302,\n       \"name\": \"hoanghoang123\",\n       \"unit_id\": 4,\n       \"start_value\": 13323312,\n       \"target_value\": 33333213213,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n\t\t\t\"id\": 303,\n       \"name\": \"Kr 2\",\n       \"unit_id\": 4,\n       \"start_value\": 13323312,\n       \"target_value\": 33333213213,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n       \"name\": \"Kr 3\",\n       \"unit_id\": 4,\n       \"start_value\": 13323312,\n       \"target_value\": 13333213213,\n       \"kr_type\": \"output\"\n    }\n\t],\n\t\"list_aligned_object_id\": [  ]\n}"
+        "text": "{\n\t\"object_id\": 1,\n\t\"name\": \"33333ưedwererw\",\n\t\"object_type\": \"khat-vong\",\n\t\"period_id\": 2,\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [  ]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 1,\n       \"name\": \"hoanghoang123\",\n       \"unit_id\": 3,\n       \"start_value\": 20,\n       \"target_value\": 150,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n\t\t\t\"id\": 2,\n       \"name\": \"Kr 2\",\n       \"unit_id\": 3,\n       \"start_value\": 20,\n       \"target_value\": 150,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n       \"name\": \"Kr 4\",\n       \"unit_id\": 3,\n       \"start_value\": 20,\n       \"target_value\": 150,\n       \"kr_type\": \"output\"\n    }\n\t],\n\t\"list_aligned_object_id\": [ 6 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -295,7 +295,7 @@
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
       "created": 1715144829033,
-      "url": "{{ _.host }}/okr/okrs/users",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/users",
       "name": "Danh sách người",
       "description": "",
       "method": "GET",
@@ -333,7 +333,7 @@
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
       "created": 1715153171210,
-      "url": "{{ _.host }}/okr/okrs/users-favorite",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/users-favorite",
       "name": "Thêm người yêu thích",
       "description": "",
       "method": "POST",
@@ -371,7 +371,7 @@
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
       "created": 1715239657056,
-      "url": "{{ _.host }}/okr/okrs/aligned-object",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/aligned-object",
       "name": "Nối mục tiêu",
       "description": "",
       "method": "POST",
@@ -409,7 +409,7 @@
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
       "created": 1716350827408,
-      "url": "{{ _.host }}/okr/okrs/notes",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/notes",
       "name": "Cập nhật notes",
       "description": "",
       "method": "POST",
@@ -3407,7 +3407,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_email\": [\n\t\t{\n\t\t\t\"email\": \"huyhoang1996.tlu@gmail.com\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"list_email\": [\n\t\t\n\t\t{\n\t\t\t\"email\": \"haylatoi12@gmail.com\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -3495,7 +3495,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"DM9Q2ieEezjxZgNg0PewzctnwSEVSf\"\n}"
+        "text": "{\n\t\"code\": \"73415L20Hq7ggK19PFgAwJOkPxnLKm\"\n}"
       },
       "parameters": [],
       "headers": [
