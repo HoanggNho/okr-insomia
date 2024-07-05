@@ -61,7 +61,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Mục tiêu 3\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"with\",\n\t\t\"data\": [ 1 ]\n\t},\n\t\"period_id\": 2,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
+        "text": "{\n\t\"name\": \"Mục tiêu 3\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [  ]\n\t},\n\t\"period_id\": 2,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -73,7 +73,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token_1996 }}",
+          "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
@@ -377,7 +377,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 129,\n\t\"aligned_object_id\": 130\n}"
+        "text": "{\n\t\"object_id\": 1,\n\t\"aligned_object_id\": 8\n}"
       },
       "parameters": [],
       "headers": [
@@ -528,13 +528,13 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1715237727175,
-      "url": "{{ _.host }}/okr/checkin/list-okr",
+      "url": "{{ _.host }}/okr/{{business_id}}/checkin/list-okr",
       "name": "Hiển thị List OKR",
       "description": "```\nstatus: \n- wait-next: chờ kỳ checkin tiếp theo\n- draft: checkin nháp\n- wait-final: chờ tổng kết\n- is_summary: đã tổng kết\n```",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 6,\n\t\"aligned_user_id\": null\n}"
+        "text": "{\n\t\"period_id\": 2,\n\t\"aligned_user_id\": null\n}"
       },
       "parameters": [],
       "headers": [
@@ -553,6 +553,7 @@
       "authentication": {},
       "metaSortKey": -1713609680391.6094,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -578,13 +579,13 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1715313541889,
-      "url": "{{ _.host }}/okr/checkin/list-kr",
+      "url": "{{ _.host }}/okr/{{business_id}}/checkin/list-kr",
       "name": "Hiển thị List KR",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 133,\n\t\"aligned_user_id\": null\n}"
+        "text": "{\n\t\"object_id\": 1,\n\t\"aligned_user_id\": null\n}"
       },
       "parameters": [],
       "headers": [
@@ -603,6 +604,7 @@
       "authentication": {},
       "metaSortKey": -1713405951079.1797,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -616,13 +618,13 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1715593783790,
-      "url": "{{ _.host }}/okr/checkin/checkin-kr",
+      "url": "{{ _.host }}/okr/{{business_id}}/checkin/checkin-kr",
       "name": "Checkin OKR",
       "description": "```\nTự tin: ['no-confidence', 'less-confidence', 'confidence', 'very-confidence'] --- không tự tin - thiếu tự tin - tự tin - rất tự tin\n```\n\n```\nTốc độ hoàn thành: ['very-slow', 'slow', 'fast', 'very-fast'] --- rất chậm - chậm - nhanh - rất nhanh\n```\n\n```\nlist_checkin_kr\n\nkr_id: id của kr\nprogress: tự tính theo checkin_value và target_value\ncheckin_value: điền vào ô tiến độ\nproblem_solution: vấn đề gặp phải\nlist_task: [ 1, 2 ] --- id của task việc\nis_delay: delay KR\nreason_delay: lí do delay\n```\n\n```\nevalute_object\n\ntype_schedule: ['wait-next', 'wait-final'] --- checkin kỳ tiếp theo - đặt lịch tổng kết\nschedule_time: lịch\n```",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 133,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 315,\n\t\t\t\"checkin_value\": 9833321323,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [ \n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 316,\n\t\t\t\"checkin_value\": 93233321323,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [\n\t\t\t\t\t{\n\t\t\t\t \t\t\"name\": \"Test 123123\"\n\t\t\t \t\t},\n\t\t\t\t\t{\n\t\t\t\t \t\t\"name\": \"Test 123123\"\n\t\t\t\t\t}\n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 317,\n\t\t\t\"checkin_value\": 10833321323,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [ ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [\n\t\t\t\t{\n\t\t\t\t \t\t\"name\": \"Test 456456\"\n\t\t\t \t\t},\n\t\t\t\t\t{\n\t\t\t\t \t\t\"name\": \"Test 789789\"\n\t\t\t\t\t}\n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-next\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"schedule_time\": \"2024-08-30 15:56:01.413057+00\"\n\t\t}\n}"
+        "text": "{\n\t\"object_id\": 1,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 1,\n\t\t\t\"checkin_value\": 70,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [ \n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 2,\n\t\t\t\"checkin_value\": 80,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [\n\t\t\t\t\t\n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 3,\n\t\t\t\"checkin_value\": 90,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [ ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [\n\n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-next\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"schedule_time\": \"2024-08-30 15:56:01.413057+00\"\n\t\t}\n}"
       },
       "parameters": [],
       "headers": [
@@ -641,6 +643,7 @@
       "authentication": {},
       "metaSortKey": -1713342285669.0454,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -654,13 +657,13 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1715739196001,
-      "url": "{{ _.host }}/okr/checkin/select-participant",
+      "url": "{{ _.host }}/okr/{{business_id}}/checkin/select-participant",
       "name": "Chọn người checkin",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 133,\n\t\"participant_id\": 9\n}"
+        "text": "{\n\t\"object_id\": 2,\n\t\"participant_id\": 3\n}"
       },
       "parameters": [],
       "headers": [
@@ -679,6 +682,7 @@
       "authentication": {},
       "metaSortKey": -1713355018751.0723,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -692,7 +696,7 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1716284039892,
-      "url": "{{ _.host }}/okr/checkin/history-kr",
+      "url": "{{ _.host }}/okr/{{business_id}}/checkin/history-kr",
       "name": "Lịch sử KR kỳ trước",
       "description": "",
       "method": "GET",
@@ -717,6 +721,7 @@
       "authentication": {},
       "metaSortKey": -1713329552587.0186,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -730,7 +735,7 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1716386536874,
-      "url": "{{ _.host }}/okr/checkin/history-object",
+      "url": "{{ _.host }}/okr/{{business_id}}/checkin/history-object",
       "name": "Lịch sử Object kỳ trước",
       "description": "",
       "method": "GET",
@@ -755,6 +760,7 @@
       "authentication": {},
       "metaSortKey": -1713304086422.9648,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -768,7 +774,7 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1716435551986,
-      "url": "{{ _.host }}/okr/checkin/summary",
+      "url": "{{ _.host }}/okr/{{business_id}}/checkin/summary",
       "name": "Tự đánh giá mục tiêu",
       "description": "",
       "method": "POST",
@@ -793,6 +799,7 @@
       "authentication": {},
       "metaSortKey": -1713291353340.938,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -806,7 +813,7 @@
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
       "created": 1717646844649,
-      "url": "{{ _.host }}/okr/checkin/summary",
+      "url": "{{ _.host }}/okr/{{business_id}}/checkin/summary",
       "name": "Hiển thị tự đánh giá mục tiêu sau tổng kết",
       "description": "",
       "method": "GET",
@@ -831,6 +838,7 @@
       "authentication": {},
       "metaSortKey": -1713284986799.9246,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -844,13 +852,13 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1715654620940,
-      "url": "{{ _.host }}/okr/task/task",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/task",
       "name": "Hiển thị danh sách Task",
       "description": "",
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 133,\n\t\"kr_id\": 315,\n\t\"aligned_user_id\": null\n\t}"
+        "text": "{\n\t\"object_id\": 8,\n\t\"kr_id\": 21,\n\t\"aligned_user_id\": 5\n\t}"
       },
       "parameters": [],
       "headers": [
@@ -869,6 +877,7 @@
       "authentication": {},
       "metaSortKey": -1713227687880.8037,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -894,13 +903,13 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1715654679899,
-      "url": "{{ _.host }}/okr/task/task",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/task",
       "name": "Tạo task việc",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 133,\n\t\"kr_id\": 315,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 56788\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 17,\n\t\t\t\"priority_id\": 18,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 8,\n\t\"kr_id\": 21,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 111\",\n\t\t\t\"participant_id\": [ 1 ],\n\t\t\t\"status_id\": 1,\n\t\t\t\"priority_id\": 1,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 222\",\n\t\t\t\"participant_id\": [ 1 ],\n\t\t\t\"status_id\": 1,\n\t\t\t\"priority_id\": 1,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 333\",\n\t\t\t\"participant_id\": [ 1 ],\n\t\t\t\"status_id\": 1,\n\t\t\t\"priority_id\": 1,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -912,13 +921,14 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_1996 }}",
           "description": ""
         }
       ],
       "authentication": {},
       "metaSortKey": -1713227687930.8037,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -932,13 +942,13 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1715678123589,
-      "url": "{{ _.host }}/okr/task/task",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/task",
       "name": "Xóa task",
       "description": "",
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 187\n}"
+        "text": "{\n\t\"task_id\": 9\n}"
       },
       "parameters": [],
       "headers": [
@@ -957,6 +967,7 @@
       "authentication": {},
       "metaSortKey": -1713214954823.7769,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -970,13 +981,13 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1715679838601,
-      "url": "{{ _.host }}/okr/task/update-participant",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/update-participant",
       "name": "Chỉnh sửa người theo dõi công việc",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 186,\n\t\"participant_id\": [ 12, 21 ]\n}"
+        "text": "{\n\t\"task_id\": 1,\n\t\"participant_id\": [ 5, 69 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -995,6 +1006,7 @@
       "authentication": {},
       "metaSortKey": -1713208588295.2634,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1008,7 +1020,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1716374603273,
-      "url": "{{ _.host }}/okr/task/drag",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/drag",
       "name": "Đổi chỗ task việc",
       "description": "",
       "method": "POST",
@@ -1033,6 +1045,7 @@
       "authentication": {},
       "metaSortKey": -1713208588245.2634,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1046,7 +1059,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1716377042958,
-      "url": "{{ _.host }}/okr/task/update-status",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/update-status",
       "name": "Chỉnh sửa trạng thái công việc",
       "description": "",
       "method": "PUT",
@@ -1071,6 +1084,7 @@
       "authentication": {},
       "metaSortKey": -1713208588270.2634,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1084,7 +1098,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1716377070703,
-      "url": "{{ _.host }}/okr/task/update-priority",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/update-priority",
       "name": "Chỉnh sửa mức độ ưu tiên công việc",
       "description": "",
       "method": "PUT",
@@ -1109,6 +1123,7 @@
       "authentication": {},
       "metaSortKey": -1713208588257.7634,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1122,13 +1137,13 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1716440571338,
-      "url": "{{ _.host }}/okr/task/batch-update-participant",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/batch-update-participant",
       "name": "Chỉnh sửa người theo dõi nhiều công việc",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 188, 189 ],\n\t\"participant_id\": [ 12, 21 ]\n}"
+        "text": "{\n\t\"list_task\": [ 2, 3 ],\n\t\"participant_id\": [ 5, 69 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1147,6 +1162,7 @@
       "authentication": {},
       "metaSortKey": -1713208588282.7634,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1160,7 +1176,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1716440610616,
-      "url": "{{ _.host }}/okr/task/batch-update-status",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/batch-update-status",
       "name": "Chỉnh sửa trạng thái nhiều công việc",
       "description": "",
       "method": "PUT",
@@ -1185,6 +1201,7 @@
       "authentication": {},
       "metaSortKey": -1713208588264.0134,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1198,7 +1215,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1716440621809,
-      "url": "{{ _.host }}/okr/task/batch-update-priority",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/batch-update-priority",
       "name": "Chỉnh sửa mức độ ưu tiên nhiều công việc",
       "description": "",
       "method": "PUT",
@@ -1223,6 +1240,7 @@
       "authentication": {},
       "metaSortKey": -1713208588251.5134,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1236,13 +1254,13 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1716448579726,
-      "url": "{{ _.host }}/okr/task/batch-delete-task",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/batch-delete-task",
       "name": "Xóa nhiều task",
       "description": "",
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 169, 170 ]\n}"
+        "text": "{\n\t\"list_task\": [ 7, 8 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1261,6 +1279,7 @@
       "authentication": {},
       "metaSortKey": -1713211771559.52,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1274,7 +1293,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1717436129080,
-      "url": "{{ _.host }}/okr/task/update-progress",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/update-progress",
       "name": "Chỉnh sửa tiến độ",
       "description": "",
       "method": "PUT",
@@ -1299,6 +1318,7 @@
       "authentication": {},
       "metaSortKey": -1713210179927.3916,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1312,7 +1332,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1717439501344,
-      "url": "{{ _.host }}/okr/task/lark-base",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/lark-base",
       "name": "Thêm URL Lark Base",
       "description": "",
       "method": "POST",
@@ -1337,6 +1357,7 @@
       "authentication": {},
       "metaSortKey": -1713132040768.1978,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1350,7 +1371,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1718092296851,
-      "url": "{{ _.host }}/okr/task/link-field",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/link-field",
       "name": "Liên kết Field",
       "description": "```\n\t\t\t\"db_field\": \"field_name\" - Tên công viêc\n\n\t\t\t\"db_field\": \"field_start_time\" - Ngày bắt đầu\n\n\t\t\t\"db_field\": \"field_end_time\" - Ngày kết thuc\n\n\t\t\t\"db_field\": \"field_task_note\" - Ghi chú\n\n\t\t\t\"db_field\": \"field_user\" - Người sở hữu\n\n\t\t\t\"db_field\": \"field_participant_task\" - Người theo dõi\n\n\t\t\t\"db_field\": \"field_priority\" - Mức độ ưu tiên\n\n\t\t\t\"db_field\": \"field_status\" - Trạng thái\n\n\t\t\t\"db_field\": \"field_progress\" - Tiến độ\n\n\t\t\t\"db_field\": \"field_kr_id\" - Kr_id\n\n\t\t\t\"db_field\": \"field_key_result\" - cây rì dăn\n\n```",
       "method": "POST",
@@ -1375,6 +1396,7 @@
       "authentication": {},
       "metaSortKey": -1713093767029.6648,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1388,13 +1410,13 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1718357627235,
-      "url": "{{ _.host }}/okr/task/task",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/task",
       "name": "Chỉnh sửa task việc",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 187,\n\t\"name\": \"Công việc 777\",\n\t\"participant_id\": [ ],\n\t\"status_id\": 17,\n\t\"priority_id\": 18,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 1\"\n}"
+        "text": "{\n\t\"task_id\": 9,\n\t\"name\": \"Công việc 567\",\n\t\"participant_id\": [ ],\n\t\"status_id\": 3,\n\t\"priority_id\": 3,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1413,6 +1435,7 @@
       "authentication": {},
       "metaSortKey": -1713221321352.2903,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1426,13 +1449,13 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1718830560543,
-      "url": "{{ _.host }}/okr/task/task-checkin",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/task-checkin",
       "name": "Tạo task việc khi checkin",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 133,\n\t\"kr_id\": 315,\n\t\"list_task_checkin\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 888\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 1,\n\t\"kr_id\": 1,\n\t\"list_task_checkin\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 888\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1451,6 +1474,7 @@
       "authentication": {},
       "metaSortKey": -1713227687905.8037,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1464,7 +1488,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1719335700453,
-      "url": "{{ _.host }}/okr/task/list-field",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/list-field",
       "name": "Hiện danh sách Field",
       "description": "```\n\t\t\t\"db_field\": \"field_name\" - Tên công viêc\n\n\t\t\t\"db_field\": \"field_start_time\" - Ngày bắt đầu\n\n\t\t\t\"db_field\": \"field_end_time\" - Ngày kết thuc\n\n\t\t\t\"db_field\": \"field_task_note\" - Ghi chú\n\n\t\t\t\"db_field\": \"field_user\" - Người sở hữu\n\n\t\t\t\"db_field\": \"field_participant_task\" - Người theo dõi\n\n\t\t\t\"db_field\": \"field_priority\" - Mức độ ưu tiên\n\n\t\t\t\"db_field\": \"field_status\" - Trạng thái\n\n\t\t\t\"db_field\": \"field_progress\" - Tiến độ\n\n\t\t\t\"db_field\": \"field_kr_id\" - Kr_id\n\n\t\t\t\"db_field\": \"field_key_result\" - cây rì dăn\n\n```",
       "method": "GET",
@@ -1489,6 +1513,7 @@
       "authentication": {},
       "metaSortKey": -1713112903898.9312,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1502,7 +1527,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1719336037299,
-      "url": "{{ _.host }}/okr/task/unlink-field",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/unlink-field",
       "name": "Hủy liên kết Field",
       "description": "```\n\t\t\t\"db_field\": \"field_name\" - Tên công viêc\n\n\t\t\t\"db_field\": \"field_start_time\" - Ngày bắt đầu\n\n\t\t\t\"db_field\": \"field_end_time\" - Ngày kết thuc\n\n\t\t\t\"db_field\": \"field_task_note\" - Ghi chú\n\n\t\t\t\"db_field\": \"field_user\" - Người sở hữu\n\n\t\t\t\"db_field\": \"field_participant_task\" - Người theo dõi\n\n\t\t\t\"db_field\": \"field_priority\" - Mức độ ưu tiên\n\n\t\t\t\"db_field\": \"field_status\" - Trạng thái\n\n\t\t\t\"db_field\": \"field_progress\" - Tiến độ\n\n\t\t\t\"db_field\": \"field_kr_id\" - Kr_id\n\n\t\t\t\"db_field\": \"field_key_result\" - cây rì dăn\n\n```",
       "method": "POST",
@@ -1527,6 +1552,7 @@
       "authentication": {},
       "metaSortKey": -1713074630160.3984,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1540,7 +1566,7 @@
       "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
       "modified": "1637671845661",
       "created": 1719398708457,
-      "url": "{{ _.host }}/okr/task/toggle-link",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/toggle-link",
       "name": "Toggle liên kết Lark",
       "description": "```\n\t\t\t\"db_field\": \"field_name\" - Tên công viêc\n\n\t\t\t\"db_field\": \"field_start_time\" - Ngày bắt đầu\n\n\t\t\t\"db_field\": \"field_end_time\" - Ngày kết thuc\n\n\t\t\t\"db_field\": \"field_task_note\" - Ghi chú\n\n\t\t\t\"db_field\": \"field_user\" - Người sở hữu\n\n\t\t\t\"db_field\": \"field_participant_task\" - Người theo dõi\n\n\t\t\t\"db_field\": \"field_priority\" - Mức độ ưu tiên\n\n\t\t\t\"db_field\": \"field_status\" - Trạng thái\n\n\t\t\t\"db_field\": \"field_progress\" - Tiến độ\n\n\t\t\t\"db_field\": \"field_kr_id\" - Kr_id\n\n\t\t\t\"db_field\": \"field_key_result\" - cây rì dăn\n\n```",
       "method": "POST",
@@ -1565,6 +1591,7 @@
       "authentication": {},
       "metaSortKey": -1713065061725.7651,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -3073,13 +3100,13 @@
       "parentId": "fld_a1ea25bde0cf4bd9b429005cec9caf01",
       "modified": "1637671845661",
       "created": 1716368713253,
-      "url": "{{ _.host }}/okr/task/status",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/status",
       "name": "Tạo trạng thái",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"status\": \"Chiến ngu 3\",\n\t\"color\": \"#123\"\n}"
+        "text": "{\n\t\"status\": \"Chiến ngu 4\",\n\t\"color\": \"#123456\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -3098,6 +3125,7 @@
       "authentication": {},
       "metaSortKey": -1713055493291.1318,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -3123,13 +3151,13 @@
       "parentId": "fld_a1ea25bde0cf4bd9b429005cec9caf01",
       "modified": "1637671845661",
       "created": 1716368730538,
-      "url": "{{ _.host }}/okr/task/status",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/status",
       "name": "Xóa trạng thái",
       "description": "",
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"status_id\": 18\n}"
+        "text": "{\n\t\"status_id\": 4\n}"
       },
       "parameters": [],
       "headers": [
@@ -3148,6 +3176,7 @@
       "authentication": {},
       "metaSortKey": -1713055493141.1318,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -3161,13 +3190,13 @@
       "parentId": "fld_a1ea25bde0cf4bd9b429005cec9caf01",
       "modified": "1637671845661",
       "created": 1716368743618,
-      "url": "{{ _.host }}/okr/task/status",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/status",
       "name": "Sửa trạng thái",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"status_id\": 18,\n\t\"status\": \"Doinggg\",\n\t\"color\": \"#123\"\n}"
+        "text": "{\n\t\"status_id\": 1,\n\t\"status\": \"Doinggg\",\n\t\"color\": \"#121212\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -3186,6 +3215,7 @@
       "authentication": {},
       "metaSortKey": -1713055493191.1318,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -3199,13 +3229,13 @@
       "parentId": "fld_a1ea25bde0cf4bd9b429005cec9caf01",
       "modified": "1637671845661",
       "created": 1716368972345,
-      "url": "{{ _.host }}/okr/task/status",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/status",
       "name": "Hiển thị danh sách trạng thái",
       "description": "",
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 133\n}"
+        "text": "{\n\t\"object_id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -3224,6 +3254,7 @@
       "authentication": {},
       "metaSortKey": -1713055493241.1318,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -3237,13 +3268,13 @@
       "parentId": "fld_029ef6a5b86140d687a4609111d87b8c",
       "modified": "1637671845661",
       "created": 1716369006405,
-      "url": "{{ _.host }}/okr/task/priority",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/priority",
       "name": "Tạo mức độ ưu tiên",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"priority\": \"Chiến Ngu 2\",\n\t\"color\": \"#123\"\n}"
+        "text": "{\n\t\"priority\": \"Chiến Ngu 5\",\n\t\"color\": \"#123456\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -3262,6 +3293,7 @@
       "authentication": {},
       "metaSortKey": -1712978945739.066,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -3287,13 +3319,13 @@
       "parentId": "fld_029ef6a5b86140d687a4609111d87b8c",
       "modified": "1637671845661",
       "created": 1716369028842,
-      "url": "{{ _.host }}/okr/task/priority",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/priority",
       "name": "Hiển thị danh sách ưu tiên",
       "description": "",
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 133\n}"
+        "text": "{\n\t\"object_id\": 1\n}"
       },
       "parameters": [],
       "headers": [
@@ -3312,6 +3344,7 @@
       "authentication": {},
       "metaSortKey": -1712978945689.066,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -3325,13 +3358,13 @@
       "parentId": "fld_029ef6a5b86140d687a4609111d87b8c",
       "modified": "1637671845661",
       "created": 1716369038162,
-      "url": "{{ _.host }}/okr/task/priority",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/priority",
       "name": "Sửa mức độ ưu tiên",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"priority_id\": 19,\n\t\"priority\": \"P4\",\n\t\"color\": \"#123\"\n}"
+        "text": "{\n\t\"priority_id\": 1,\n\t\"priority\": \"P4\",\n\t\"color\": \"#121212\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -3350,6 +3383,7 @@
       "authentication": {},
       "metaSortKey": -1712978945639.066,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -3363,13 +3397,13 @@
       "parentId": "fld_029ef6a5b86140d687a4609111d87b8c",
       "modified": "1637671845661",
       "created": 1716369048897,
-      "url": "{{ _.host }}/okr/task/priority",
+      "url": "{{ _.host }}/okr/{{business_id}}/task/priority",
       "name": "Xóa mức độ ưu tiên",
       "description": "",
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"priority_id\": 19\n}"
+        "text": "{\n\t\"priority_id\": 4\n}"
       },
       "parameters": [],
       "headers": [
@@ -3388,6 +3422,7 @@
       "authentication": {},
       "metaSortKey": -1712978945589.066,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -3407,7 +3442,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_email\": [\n\t\t\n\t\t{\n\t\t\t\"email\": \"haylatoi12@gmail.com\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"list_email\": [\n\t\t{\n\t\t\t\"email\": \"ngochai1121a@gmail.com\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
