@@ -320,6 +320,7 @@
       "authentication": {},
       "metaSortKey": 1237.5,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -339,7 +340,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"user_id\": 12\n}"
+        "text": "{\n\t\"user_id\": 69\n}"
       },
       "parameters": [],
       "headers": [
@@ -1026,7 +1027,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 133,\n  \"kr_id\": 315,\n\t\"task_id\": 188,\n\t\"old_index\": 1,\n\t\"new_index\": 2\n}"
+        "text": "{\n\t\"object_id\": 1,\n  \"kr_id\": 1,\n\t\"task_id\": 4,\n\t\"old_index\": 4,\n\t\"new_index\": 2\n}"
       },
       "parameters": [],
       "headers": [
@@ -1065,7 +1066,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 188,\n\t\"status_id\": 20\n}"
+        "text": "{\n\t\"task_id\": 1,\n\t\"status_id\": 2\n}"
       },
       "parameters": [],
       "headers": [
@@ -1104,7 +1105,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 188,\n\t\"priority_id\": 20\n}"
+        "text": "{\n\t\"task_id\": 1,\n\t\"priority_id\": 2\n}"
       },
       "parameters": [],
       "headers": [
@@ -1182,7 +1183,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 188, 189 ],\n\t\"status_id\": 20\n}"
+        "text": "{\n\t\"list_task\": [ 2, 3 ],\n\t\"status_id\": 3\n}"
       },
       "parameters": [],
       "headers": [
@@ -1221,7 +1222,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 188, 189 ],\n\t\"priority_id\": 20\n}"
+        "text": "{\n\t\"list_task\": [ 2, 3 ],\n\t\"priority_id\": 3\n}"
       },
       "parameters": [],
       "headers": [
@@ -1299,7 +1300,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 186,\n\t\"progress\": 80\n}"
+        "text": "{\n\t\"task_id\": 1,\n\t\"progress\": 80\n}"
       },
       "parameters": [],
       "headers": [
