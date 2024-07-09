@@ -61,7 +61,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Mục tiêu 3\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [  ]\n\t},\n\t\"period_id\": 14,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 7,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 7,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 7,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
+        "text": "{\n\t\"name\": \"Mục tiêu 333\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [  ]\n\t},\n\t\"period_id\": 2,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 8,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -111,7 +111,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 14,\n\t\"aligned_user_id\": null\n}"
+        "text": "{\n\t\"period_id\": 16,\n\t\"aligned_user_id\": null\n}"
       },
       "parameters": [],
       "headers": [
@@ -123,7 +123,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_hoangvn }}",
           "description": ""
         }
       ],
@@ -187,7 +187,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Hoang\",\n\t\"period_id\": 2,\n\t\"object_id\": 1\n}"
+        "text": "{\n\t\"name\": \"Hoang\",\n\t\"period_id\": 2,\n\t\"object_id\": 8\n}"
       },
       "parameters": [],
       "headers": [
@@ -263,7 +263,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 2,\n\t\"name\": \"33333ưedwererw\",\n\t\"object_type\": \"khat-vong\",\n\t\"period_id\": 2,\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [  ]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 4,\n       \"name\": \"hoanghoang123\",\n       \"unit_id\": 3,\n       \"start_value\": 20,\n       \"target_value\": 150,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n\t\t\t\"id\": 5,\n       \"name\": \"Kr 2\",\n       \"unit_id\": 3,\n       \"start_value\": 20,\n       \"target_value\": 150,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n\t\t\t \"id\": 6,\n       \"name\": \"Kr 4\",\n       \"unit_id\": 3,\n       \"start_value\": 20,\n       \"target_value\": 150,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n\t\t\t\"id\": 40,\n       \"name\": \"Kr 6\",\n       \"unit_id\": 3,\n       \"start_value\": 20,\n       \"target_value\": 150,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n\t\t\t\"id\": 40,\n       \"name\": \"Kr 6\",\n       \"unit_id\": 3,\n       \"start_value\": 20,\n       \"target_value\": 150,\n       \"kr_type\": \"output\"\n    }\n\t],\n\t\"list_aligned_object_id\": [  ]\n}"
+        "text": "{\n\t\"object_id\": 31,\n\t\"name\": \"33333ưedwererw\",\n\t\"object_type\": \"khat-vong\",\n\t\"period_id\": 2,\n\t\"display_with\": {\n\t\t\"type\": \"with\",\n\t\t\"data\": [ 5 ]\n\t},\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"id\": 89,\n       \"name\": \"hoanghoang123\",\n       \"unit_id\": 3,\n       \"start_value\": 20,\n       \"target_value\": 150,\n       \"kr_type\": \"output\"\n    },\n\t\t{\n\t\t\t\"id\": 90,\n       \"name\": \"Kr 2\",\n       \"unit_id\": 3,\n       \"start_value\": 20,\n       \"target_value\": 150,\n       \"kr_type\": \"output\"\n    }\n\t],\n\t\"list_aligned_object_id\": [  ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -444,49 +444,6 @@
       "_type": "request"
     },
     {
-      "_id": "req_c424020d9e2f47a6987d5300b625f1af",
-      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
-      "modified": "1637671845661",
-      "created": 1714101692206,
-      "url": "{{ _.host }}/public/login-lark",
-      "name": "Login Larksuite",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"d2btf79e6bda4e388ca96e224520ac4l\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json"
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1714101692206,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "fld_fa99476a94e2456da52cd59412dc8bc2",
-      "parentId": "__WORKSPACE_ID__",
-      "modified": "1637671845661",
-      "created": 1714964044197,
-      "name": "Auth",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -1715100892266,
-      "_type": "request_group"
-    },
-    {
       "_id": "req_98e1eed3e93442e4a6f9772556330727",
       "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
       "modified": "1637671845661",
@@ -525,6 +482,18 @@
       "_type": "request"
     },
     {
+      "_id": "fld_fa99476a94e2456da52cd59412dc8bc2",
+      "parentId": "__WORKSPACE_ID__",
+      "modified": "1637671845661",
+      "created": 1714964044197,
+      "name": "Auth",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1715100892266,
+      "_type": "request_group"
+    },
+    {
       "_id": "req_549435d0a23740f187202f23754b99b8",
       "parentId": "fld_e01daecec2b04483ab99f68c358982ef",
       "modified": "1637671845661",
@@ -535,7 +504,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 14,\n\t\"aligned_user_id\": null\n}"
+        "text": "{\n\t\"period_id\": 2,\n\t\"aligned_user_id\": null\n}"
       },
       "parameters": [],
       "headers": [
@@ -586,7 +555,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n\t\"aligned_user_id\": null\n}"
+        "text": "{\n\t\"object_id\": 29,\n\t\"aligned_user_id\": null\n}"
       },
       "parameters": [],
       "headers": [
@@ -625,7 +594,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 8,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 21,\n\t\t\t\"checkin_value\": 100,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [ \n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 22,\n\t\t\t\"checkin_value\": 80,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Giải pháp 333\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Giải pháp 444\"\n\t\t\t\t}\t\n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 23,\n\t\t\t\"checkin_value\": 90,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [ ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Giải pháp 555\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Giải pháp 666\"\n\t\t\t\t}\t\n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-next\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"schedule_time\": \"2024-08-30 15:56:01.413057+00\"\n\t\t}\n}"
+        "text": "{\n\t\"object_id\": 29,\n\t\"is_draft\": false,\n\t\"list_checkin_kr\": [\n\t\t{\n\t\t\t\"kr_id\": 83,\n\t\t\t\"checkin_value\": 120,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"fast\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [ \n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu123123123\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 84,\n\t\t\t\"checkin_value\": 120,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Giải pháp 333\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Giải pháp 444\"\n\t\t\t\t}\t\n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 85,\n\t\t\t\"checkin_value\": 120,\n\t\t\t\"problem_solution\": \"Chien ngu 2\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"slow\",\n\t\t\t\"list_task\": [  ],\n\t\t\t\"is_delay\": false,\n\t\t\t\"list_solution\": [\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Giải pháp 333\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Giải pháp 444\"\n\t\t\t\t}\t\n\t\t\t],\n\t\t\t\"reason_delay\":\"Ngu2222\"\n\t\t}\n\t],\n\t\"evalute_object\": \n\t\t{\n\t\t\t\"type_schedule\": \"wait-next\",\n\t\t\t\"confidence_level\": \"no-confidence\",\n\t\t\t\"progress_speed\": \"very-slow\",\n\t\t\t\"schedule_time\": \"2024-08-30 15:56:01.413057+00\"\n\t\t}\n}"
       },
       "parameters": [],
       "headers": [
@@ -637,7 +606,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token_1996 }}",
+          "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
@@ -664,7 +633,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 22,\n\t\"participant_id\": 1\n}"
+        "text": "{\n\t\"object_id\": 29,\n\t\"participant_id\": 5\n}"
       },
       "parameters": [],
       "headers": [
@@ -742,7 +711,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 19\n}"
+        "text": "{\n\t\"object_id\": 29\n}"
       },
       "parameters": [],
       "headers": [
@@ -859,7 +828,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n\t\"kr_id\": 1,\n\t\"aligned_user_id\": null\n\t}"
+        "text": "{\n\t\"object_id\": 29,\n\t\"kr_id\": 83,\n\t\"aligned_user_id\": null\n\t}"
       },
       "parameters": [],
       "headers": [
@@ -910,7 +879,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 19,\n\t\"kr_id\": 52,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 111\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 36,\n\t\t\t\"priority_id\": 20,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 222\",\n\t\t\t\"participant_id\": [ ],\n\t\t\t\"status_id\": 36,\n\t\t\t\"priority_id\": 20,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 29,\n\t\"kr_id\": 83,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 123123\",\n\t\t\t\"participant_id\": [ 5 ],\n\t\t\t\"status_id\": 50,\n\t\t\t\"priority_id\": 32,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -949,7 +918,7 @@
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 9\n}"
+        "text": "{\n\t\"task_id\": 127\n}"
       },
       "parameters": [],
       "headers": [
@@ -1066,7 +1035,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 1,\n\t\"status_id\": 2\n}"
+        "text": "{\n\t\"task_id\": 126,\n\t\"status_id\": 54\n}"
       },
       "parameters": [],
       "headers": [
@@ -1105,7 +1074,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 1,\n\t\"priority_id\": 2\n}"
+        "text": "{\n\t\"task_id\": 126,\n\t\"priority_id\": 34\n}"
       },
       "parameters": [],
       "headers": [
@@ -1144,7 +1113,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 2, 3 ],\n\t\"participant_id\": [ 5, 69 ]\n}"
+        "text": "{\n\t\"list_task\": [ 122, 123 ],\n\t\"participant_id\": [ 5, 69 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1183,7 +1152,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 2, 3 ],\n\t\"status_id\": 3\n}"
+        "text": "{\n\t\"list_task\": [ 122, 123 ],\n\t\"status_id\": 55\n}"
       },
       "parameters": [],
       "headers": [
@@ -1222,7 +1191,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 2, 3 ],\n\t\"priority_id\": 3\n}"
+        "text": "{\n\t\"list_task\": [ 122, 123 ],\n\t\"priority_id\": 37\n}"
       },
       "parameters": [],
       "headers": [
@@ -1261,7 +1230,7 @@
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_task\": [ 7, 8 ]\n}"
+        "text": "{\n\t\"list_task\": [ 124, 125 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1300,7 +1269,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 1,\n\t\"progress\": 80\n}"
+        "text": "{\n\t\"task_id\": 126,\n\t\"progress\": 80\n}"
       },
       "parameters": [],
       "headers": [
@@ -1339,7 +1308,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 114,\n  \"url\": \"https://smitvietnam.larksuite.com/base/A9NQbAQm7acA04s44IZuWItFsUb?table=tblvfvQJ1wQ67rVS&view=vewIX0SJpb\"\n}\n"
+        "text": "{\n\t\"object_id\": 29,\n  \"url\": \"https://smitvietnam.larksuite.com/base/A9NQbAQm7acA04s44IZuWItFsUb?table=tblvfvQJ1wQ67rVS&view=vewIX0SJpb\"\n}\n"
       },
       "parameters": [],
       "headers": [
@@ -1378,7 +1347,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 90,\n\t\"list_field\": [\n\t\t{\n\t\t\t\"db_field\": \"field_date_created\",\n\t\t\t\"lark_field_id\": \"fld9Tq2Mra\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_name\",\n\t\t\t\"lark_field_id\": \"fldsLNwISb\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_start_time\",\n\t\t\t\"lark_field_id\": \"fld1fKTh3E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_end_time\",\n\t\t\t\"lark_field_id\": \"fld9sFkCDd\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_task_note\",\n\t\t\t\"lark_field_id\": \"fldKkc6Nd3\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_user\",\n\t\t\t\"lark_field_id\": \"fldB9ga2xp\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_participant_task\",\n\t\t\t\"lark_field_id\": \"fldBDgSRpG\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_priority\",\n\t\t\t\"lark_field_id\": \"fld2jdbS2E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_status\",\n\t\t\t\"lark_field_id\": \"fldopO5wYn\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_progress\",\n\t\t\t\"lark_field_id\": \"fldmDx9DFi\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_kr_id\",\n\t\t\t\"lark_field_id\": \"flddHnHGOL\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_key_result\",\n\t\t\t\"lark_field_id\": \"fld5liby8z\"\n\t\t}\n\t]\n}\n\n"
+        "text": "{\n\t\"object_id\": 29,\n\t\"list_field\": [\n\t\t{\n\t\t\t\"db_field\": \"field_date_created\",\n\t\t\t\"lark_field_id\": \"fld9Tq2Mra\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_name\",\n\t\t\t\"lark_field_id\": \"fldsLNwISb\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_start_time\",\n\t\t\t\"lark_field_id\": \"fld1fKTh3E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_end_time\",\n\t\t\t\"lark_field_id\": \"fld9sFkCDd\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_task_note\",\n\t\t\t\"lark_field_id\": \"fldKkc6Nd3\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_user\",\n\t\t\t\"lark_field_id\": \"fldB9ga2xp\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_participant_task\",\n\t\t\t\"lark_field_id\": \"fldBDgSRpG\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_priority\",\n\t\t\t\"lark_field_id\": \"fld2jdbS2E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_status\",\n\t\t\t\"lark_field_id\": \"fldopO5wYn\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_progress\",\n\t\t\t\"lark_field_id\": \"fldmDx9DFi\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_kr_id\",\n\t\t\t\"lark_field_id\": \"flddHnHGOL\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_key_result\",\n\t\t\t\"lark_field_id\": \"fld5liby8z\"\n\t\t}\n\t]\n}\n\n"
       },
       "parameters": [],
       "headers": [
@@ -1417,7 +1386,7 @@
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"task_id\": 9,\n\t\"name\": \"Công việc 567\",\n\t\"participant_id\": [ ],\n\t\"status_id\": 3,\n\t\"priority_id\": 3,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 123\"\n}"
+        "text": "{\n\t\"task_id\": 126,\n\t\"name\": \"Công việc 56789\",\n\t\"participant_id\": [ ],\n\t\"status_id\": 54,\n\t\"priority_id\": 33,\n\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\"note\": \"Ghi chú 123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1456,7 +1425,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 1,\n\t\"kr_id\": 1,\n\t\"list_task_checkin\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 888\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"object_id\": 29,\n\t\"kr_id\": 83,\n\t\"list_task_checkin\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 888\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -1534,7 +1503,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 89\n}\n"
+        "text": "{\n\t\"object_id\": 29\n}\n"
       },
       "parameters": [],
       "headers": [
@@ -1602,6 +1571,45 @@
       "_type": "request"
     },
     {
+      "_id": "req_577f7d230cef4305ad8943270b8c24ed",
+      "parentId": "fld_48473c08e90a4e8fb86d34c94694c2e0",
+      "modified": "1637671845661",
+      "created": 1720521044270,
+      "url": "{{ _.host }}/okr/{{business_id}}/task/unlink-larksuite",
+      "name": "Hủy liên kết tài khoản Lark",
+      "description": "```\n\t\t\t\"db_field\": \"field_name\" - Tên công viêc\n\n\t\t\t\"db_field\": \"field_start_time\" - Ngày bắt đầu\n\n\t\t\t\"db_field\": \"field_end_time\" - Ngày kết thuc\n\n\t\t\t\"db_field\": \"field_task_note\" - Ghi chú\n\n\t\t\t\"db_field\": \"field_user\" - Người sở hữu\n\n\t\t\t\"db_field\": \"field_participant_task\" - Người theo dõi\n\n\t\t\t\"db_field\": \"field_priority\" - Mức độ ưu tiên\n\n\t\t\t\"db_field\": \"field_status\" - Trạng thái\n\n\t\t\t\"db_field\": \"field_progress\" - Tiến độ\n\n\t\t\t\"db_field\": \"field_kr_id\" - Kr_id\n\n\t\t\t\"db_field\": \"field_key_result\" - cây rì dăn\n\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1713060277508.4485,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_b5cf4797c50c42aeb5d60d1f79469406",
       "parentId": "fld_9ffd66d710cf4a078cb9760e89b3e584",
       "modified": "1637671845661",
@@ -1612,7 +1620,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 2,\n\t\"type\": \"with-me\"\n}"
+        "text": "{\n\t\"period_id\": 2,\n\t\"type\": \"me\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1663,7 +1671,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 42\n}"
+        "text": "{\n\t\"check_in_id\": 47\n}"
       },
       "parameters": [],
       "headers": [
@@ -1675,7 +1683,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_1996 }}",
           "description": ""
         }
       ],
@@ -1702,7 +1710,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 42,\n\t\"type_response\": \"positive\",\n\t\"emp_effort\": \"effort\",\n\t\"emp_performance\": \"good\",\n\t\"content\": \"Làm tốt lắm\"\n}"
+        "text": "{\n\t\"check_in_id\": 47,\n\t\"type_response\": \"positive\",\n\t\"emp_effort\": \"effort\",\n\t\"emp_performance\": \"good\",\n\t\"content\": \"Làm tốt lắm\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1714,7 +1722,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_1996 }}",
           "description": ""
         }
       ],
@@ -1770,28 +1778,37 @@
       "_type": "request"
     },
     {
-      "_id": "req_5ada791f149642cc984082ef47fbf62a",
-      "parentId": "fld_3646aaba9961481da2372ef0408e5700",
+      "_id": "req_c424020d9e2f47a6987d5300b625f1af",
+      "parentId": "fld_652bb792d8d645518fdbe29d5f17a11c",
       "modified": "1637671845661",
-      "created": 1718649234649,
-      "url": "{{ _.host }}/webhook/larksuite-event",
-      "name": "Sync",
+      "created": 1714101692206,
+      "url": "{{ _.host }}/auth/{{business_id}}/get-info-larksuite",
+      "name": "Đồng bộ thông tin với tài khoản OKR",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"schema\": \"2.0\",\n\t\"header\": {\n\t\t\"event_id\": \"3db38b2ffd6e86be0b73c75517adbdc0\",\n\t\t\"token\": \"logeDALyD9mb8TCVRWNFohAwBjq5WLfz\",\n\t\t\"create_time\": \"1718649347000\",\n\t\t\"event_type\": \"drive.file.bitable_record_changed_v1\",\n\t\t\"tenant_key\": \"10195519e257975a\",\n\t\t\"app_id\": \"cli_a52e58a2c7b91009\"\n\t},\n\t\"event\": {\n\t\t\"action_list\": [\n\t\t\t{\n\t\t\t\t\"action\": \"record_edited\",\n\t\t\t\t\"after_value\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldsLNwISb\",\n\t\t\t\t\t\t\"field_value\": \"[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Công việc 1\\\"}]\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldxErSXN2\",\n\t\t\t\t\t\t\"field_value\": \"56\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"flddHnHGOL\",\n\t\t\t\t\t\t\"field_value\": \"114\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldB9ga2xp\",\n\t\t\t\t\t\t\"field_identity_value\": {\n\t\t\t\t\t\t\t\"users\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"avatar_url\": \"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\",\n\t\t\t\t\t\t\t\t\t\"en_name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"user_id\": {\n\t\t\t\t\t\t\t\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\t\t\t\t\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\t\t\t\t\t\t\t\"user_id\": \"edcc565b\"\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"field_value\": \"{\\\"users\\\":[{\\\"userId\\\":\\\"7246265034815307782\\\",\\\"enName\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"avatarUrl\\\":\\\"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\\\",\\\"notify\\\":false,\\\"text\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"name\\\":\\\"Phạm Phan Huy Hoàng\\\"}]}\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldBDgSRpG\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldmDx9DFi\",\n\t\t\t\t\t\t\"field_value\": \"0\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldKkc6Nd3\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9Tq2Mra\",\n\t\t\t\t\t\t\"field_value\": \"1718557200000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9sFkCDd\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld2jdbS2E\",\n\t\t\t\t\t\t\"field_value\": \"opthUFAXKP\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld1fKTh3E\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldopO5wYn\",\n\t\t\t\t\t\t\"field_value\": \"optw6zFsEY\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld5liby8z\",\n\t\t\t\t\t\t\"field_value\": \"abc\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"before_value\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldxErSXN2\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldB9ga2xp\",\n\t\t\t\t\t\t\"field_identity_value\": {\n\t\t\t\t\t\t\t\"users\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"avatar_url\": \"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\",\n\t\t\t\t\t\t\t\t\t\"en_name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"user_id\": {\n\t\t\t\t\t\t\t\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\t\t\t\t\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\t\t\t\t\t\t\t\"user_id\": \"edcc565b\"\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"field_value\": \"{\\\"users\\\":[{\\\"userId\\\":\\\"7246265034815307782\\\",\\\"enName\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"avatarUrl\\\":\\\"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\\\",\\\"notify\\\":false,\\\"text\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"name\\\":\\\"Phạm Phan Huy Hoàng\\\"}]}\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldsLNwISb\",\n\t\t\t\t\t\t\"field_value\": \"[{\\\"text\\\":\\\"Công việc 23\\\",\\\"type\\\":\\\"text\\\"}]\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld2jdbS2E\",\n\t\t\t\t\t\t\"field_value\": \"opthUFAXKP\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldBDgSRpG\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld5liby8z\",\n\t\t\t\t\t\t\"field_value\": \"Abcde\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld1fKTh3E\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9sFkCDd\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldmDx9DFi\",\n\t\t\t\t\t\t\"field_value\": \"0\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldopO5wYn\",\n\t\t\t\t\t\t\"field_value\": \"optw6zFsEY\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9Tq2Mra\",\n\t\t\t\t\t\t\"field_value\": \"1718557200000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldKkc6Nd3\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"flddHnHGOL\",\n\t\t\t\t\t\t\"field_value\": \"114\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"record_id\": \"recufX4z7m0m0S\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"action\": \"record_edited\",\n\t\t\t\t\"after_value\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldsLNwISb\",\n\t\t\t\t\t\t\"field_value\": \"[{\\\"text\\\":\\\"Công việc 1\\\",\\\"type\\\":\\\"text\\\"}]\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld2jdbS2E\",\n\t\t\t\t\t\t\"field_value\": \"opthUFAXKP\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldxErSXN2\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldopO5wYn\",\n\t\t\t\t\t\t\"field_value\": \"optw6zFsEY\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld5liby8z\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9sFkCDd\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldBDgSRpG\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldKkc6Nd3\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld1fKTh3E\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"flddHnHGOL\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9Tq2Mra\",\n\t\t\t\t\t\t\"field_value\": \"1718557200000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldB9ga2xp\",\n\t\t\t\t\t\t\"field_identity_value\": {\n\t\t\t\t\t\t\t\"users\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"avatar_url\": \"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\",\n\t\t\t\t\t\t\t\t\t\"en_name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"user_id\": {\n\t\t\t\t\t\t\t\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\t\t\t\t\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\t\t\t\t\t\t\t\"user_id\": \"edcc565b\"\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"field_value\": \"{\\\"users\\\":[{\\\"avatarUrl\\\":\\\"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\\\",\\\"notify\\\":false,\\\"text\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"name\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"userId\\\":\\\"7246265034815307782\\\",\\\"enName\\\":\\\"Phạm Phan Huy Hoàng\\\"}]}\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldmDx9DFi\",\n\t\t\t\t\t\t\"field_value\": \"0\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"before_value\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldmDx9DFi\",\n\t\t\t\t\t\t\"field_value\": \"0\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldopO5wYn\",\n\t\t\t\t\t\t\"field_value\": \"optw6zFsEY\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld1fKTh3E\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldBDgSRpG\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldB9ga2xp\",\n\t\t\t\t\t\t\"field_identity_value\": {\n\t\t\t\t\t\t\t\"users\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"avatar_url\": \"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\",\n\t\t\t\t\t\t\t\t\t\"en_name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"user_id\": {\n\t\t\t\t\t\t\t\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\t\t\t\t\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\t\t\t\t\t\t\t\"user_id\": \"edcc565b\"\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"field_value\": \"{\\\"users\\\":[{\\\"avatarUrl\\\":\\\"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\\\",\\\"notify\\\":false,\\\"text\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"name\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"userId\\\":\\\"7246265034815307782\\\",\\\"enName\\\":\\\"Phạm Phan Huy Hoàng\\\"}]}\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld2jdbS2E\",\n\t\t\t\t\t\t\"field_value\": \"opthUFAXKP\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldKkc6Nd3\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldxErSXN2\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"flddHnHGOL\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9Tq2Mra\",\n\t\t\t\t\t\t\"field_value\": \"1718557200000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld5liby8z\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9sFkCDd\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldsLNwISb\",\n\t\t\t\t\t\t\"field_value\": \"[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Công việc 23\\\"}]\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"record_id\": \"recufX4zrCQL6C\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"action\": \"record_edited\",\n\t\t\t\t\"after_value\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld2jdbS2E\",\n\t\t\t\t\t\t\"field_value\": \"opthUFAXKP\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldopO5wYn\",\n\t\t\t\t\t\t\"field_value\": \"optw6zFsEY\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldB9ga2xp\",\n\t\t\t\t\t\t\"field_identity_value\": {\n\t\t\t\t\t\t\t\"users\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"avatar_url\": \"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\",\n\t\t\t\t\t\t\t\t\t\"en_name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"user_id\": {\n\t\t\t\t\t\t\t\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\t\t\t\t\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\t\t\t\t\t\t\t\"user_id\": \"edcc565b\"\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"field_value\": \"{\\\"users\\\":[{\\\"enName\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"avatarUrl\\\":\\\"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\\\",\\\"notify\\\":false,\\\"text\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"name\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"userId\\\":\\\"7246265034815307782\\\"}]}\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"flddHnHGOL\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldBDgSRpG\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldKkc6Nd3\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldxErSXN2\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9Tq2Mra\",\n\t\t\t\t\t\t\"field_value\": \"1718557200000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld1fKTh3E\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldsLNwISb\",\n\t\t\t\t\t\t\"field_value\": \"[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Công việc 1\\\"}]\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldmDx9DFi\",\n\t\t\t\t\t\t\"field_value\": \"0\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9sFkCDd\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld5liby8z\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"before_value\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9Tq2Mra\",\n\t\t\t\t\t\t\"field_value\": \"1718557200000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld5liby8z\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldKkc6Nd3\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldBDgSRpG\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld1fKTh3E\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9sFkCDd\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldxErSXN2\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldmDx9DFi\",\n\t\t\t\t\t\t\"field_value\": \"0\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldB9ga2xp\",\n\t\t\t\t\t\t\"field_identity_value\": {\n\t\t\t\t\t\t\t\"users\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"avatar_url\": \"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\",\n\t\t\t\t\t\t\t\t\t\"en_name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"user_id\": {\n\t\t\t\t\t\t\t\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\t\t\t\t\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\t\t\t\t\t\t\t\"user_id\": \"edcc565b\"\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"field_value\": \"{\\\"users\\\":[{\\\"userId\\\":\\\"7246265034815307782\\\",\\\"enName\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"avatarUrl\\\":\\\"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\\\",\\\"notify\\\":false,\\\"text\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"name\\\":\\\"Phạm Phan Huy Hoàng\\\"}]}\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld2jdbS2E\",\n\t\t\t\t\t\t\"field_value\": \"opthUFAXKP\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldopO5wYn\",\n\t\t\t\t\t\t\"field_value\": \"optw6zFsEY\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"flddHnHGOL\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldsLNwISb\",\n\t\t\t\t\t\t\"field_value\": \"[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Công việc 23\\\"}]\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"record_id\": \"recufX4zIOl7WO\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"action\": \"record_edited\",\n\t\t\t\t\"after_value\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldsLNwISb\",\n\t\t\t\t\t\t\"field_value\": \"[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Công việc 1\\\"}]\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9sFkCDd\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldxErSXN2\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld5liby8z\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld1fKTh3E\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9Tq2Mra\",\n\t\t\t\t\t\t\"field_value\": \"1718557200000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldKkc6Nd3\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldBDgSRpG\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld2jdbS2E\",\n\t\t\t\t\t\t\"field_value\": \"opthUFAXKP\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldopO5wYn\",\n\t\t\t\t\t\t\"field_value\": \"optw6zFsEY\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldB9ga2xp\",\n\t\t\t\t\t\t\"field_identity_value\": {\n\t\t\t\t\t\t\t\"users\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"avatar_url\": \"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\",\n\t\t\t\t\t\t\t\t\t\"en_name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"user_id\": {\n\t\t\t\t\t\t\t\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\t\t\t\t\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\t\t\t\t\t\t\t\"user_id\": \"edcc565b\"\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"field_value\": \"{\\\"users\\\":[{\\\"text\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"name\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"userId\\\":\\\"7246265034815307782\\\",\\\"enName\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"avatarUrl\\\":\\\"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\\\",\\\"notify\\\":false}]}\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldmDx9DFi\",\n\t\t\t\t\t\t\"field_value\": \"0\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"flddHnHGOL\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"before_value\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9sFkCDd\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9Tq2Mra\",\n\t\t\t\t\t\t\"field_value\": \"1718557200000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldBDgSRpG\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld1fKTh3E\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldmDx9DFi\",\n\t\t\t\t\t\t\"field_value\": \"0\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld2jdbS2E\",\n\t\t\t\t\t\t\"field_value\": \"opthUFAXKP\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldxErSXN2\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldopO5wYn\",\n\t\t\t\t\t\t\"field_value\": \"optw6zFsEY\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld5liby8z\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldKkc6Nd3\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldsLNwISb\",\n\t\t\t\t\t\t\"field_value\": \"[{\\\"text\\\":\\\"Công việc 23\\\",\\\"type\\\":\\\"text\\\"}]\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldB9ga2xp\",\n\t\t\t\t\t\t\"field_identity_value\": {\n\t\t\t\t\t\t\t\"users\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"avatar_url\": \"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\",\n\t\t\t\t\t\t\t\t\t\"en_name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"user_id\": {\n\t\t\t\t\t\t\t\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\t\t\t\t\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\t\t\t\t\t\t\t\"user_id\": \"edcc565b\"\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"field_value\": \"{\\\"users\\\":[{\\\"userId\\\":\\\"7246265034815307782\\\",\\\"enName\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"avatarUrl\\\":\\\"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\\\",\\\"notify\\\":false,\\\"text\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"name\\\":\\\"Phạm Phan Huy Hoàng\\\"}]}\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"flddHnHGOL\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"record_id\": \"recufX4A3Iwazd\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"action\": \"record_edited\",\n\t\t\t\t\"after_value\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldB9ga2xp\",\n\t\t\t\t\t\t\"field_identity_value\": {\n\t\t\t\t\t\t\t\"users\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"avatar_url\": \"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\",\n\t\t\t\t\t\t\t\t\t\"en_name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"user_id\": {\n\t\t\t\t\t\t\t\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\t\t\t\t\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\t\t\t\t\t\t\t\"user_id\": \"edcc565b\"\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"field_value\": \"{\\\"users\\\":[{\\\"name\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"userId\\\":\\\"7246265034815307782\\\",\\\"enName\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"avatarUrl\\\":\\\"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\\\",\\\"notify\\\":false,\\\"text\\\":\\\"Phạm Phan Huy Hoàng\\\"}]}\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldsLNwISb\",\n\t\t\t\t\t\t\"field_value\": \"[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Công việc 1\\\"}]\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld5liby8z\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld2jdbS2E\",\n\t\t\t\t\t\t\"field_value\": \"opthUFAXKP\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9Tq2Mra\",\n\t\t\t\t\t\t\"field_value\": \"1718557200000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld1fKTh3E\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9sFkCDd\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldmDx9DFi\",\n\t\t\t\t\t\t\"field_value\": \"0\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldKkc6Nd3\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldopO5wYn\",\n\t\t\t\t\t\t\"field_value\": \"optw6zFsEY\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldBDgSRpG\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"flddHnHGOL\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldxErSXN2\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"before_value\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldxErSXN2\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld5liby8z\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldBDgSRpG\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9sFkCDd\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld9Tq2Mra\",\n\t\t\t\t\t\t\"field_value\": \"1718557200000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld2jdbS2E\",\n\t\t\t\t\t\t\"field_value\": \"opthUFAXKP\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldmDx9DFi\",\n\t\t\t\t\t\t\"field_value\": \"0\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fld1fKTh3E\",\n\t\t\t\t\t\t\"field_value\": \"1718621822000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldB9ga2xp\",\n\t\t\t\t\t\t\"field_identity_value\": {\n\t\t\t\t\t\t\t\"users\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"avatar_url\": \"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\",\n\t\t\t\t\t\t\t\t\t\"en_name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"name\": \"Phạm Phan Huy Hoàng\",\n\t\t\t\t\t\t\t\t\t\"user_id\": {\n\t\t\t\t\t\t\t\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\t\t\t\t\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\t\t\t\t\t\t\t\"user_id\": \"edcc565b\"\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"field_value\": \"{\\\"users\\\":[{\\\"userId\\\":\\\"7246265034815307782\\\",\\\"enName\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"avatarUrl\\\":\\\"https://pan16.larksuitecdn.com/static-resource/v1/v3_00as_e11ae0c7-8338-40db-94fe-ed2e1b97bdbh~?image_size=72x72&cut_type=default-face&quality=&format=jpeg&sticker_format=.webp\\\",\\\"notify\\\":false,\\\"text\\\":\\\"Phạm Phan Huy Hoàng\\\",\\\"name\\\":\\\"Phạm Phan Huy Hoàng\\\"}]}\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldsLNwISb\",\n\t\t\t\t\t\t\"field_value\": \"[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Công việc 23\\\"}]\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldopO5wYn\",\n\t\t\t\t\t\t\"field_value\": \"optw6zFsEY\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"fldKkc6Nd3\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"field_id\": \"flddHnHGOL\",\n\t\t\t\t\t\t\"field_value\": \"\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"record_id\": \"recufX4wL8Q3mS\"\n\t\t\t}\n\t\t],\n\t\t\"file_token\": \"ZGU4bLaw4aMjSGsQQaUug8FIsLh\",\n\t\t\"file_type\": \"bitable\",\n\t\t\"operator_id\": {\n\t\t\t\"open_id\": \"ou_5c25b111ce598a3b72f28adb7ec7ec35\",\n\t\t\t\"union_id\": \"on_c73921538a9f39d51f627663aec28d6e\",\n\t\t\t\"user_id\": \"edcc565b\"\n\t\t},\n\t\t\"revision\": 62,\n\t\t\"subscriber_id_list\": [\n\t\t\t{\n\t\t\t\t\"open_id\": \"ou_8103e69f46b9c50e63f3ec170f79d6b5\",\n\t\t\t\t\"union_id\": \"on_d37afd00e9121edf78ce350e5bdb1924\",\n\t\t\t\t\"user_id\": \"\"\n\t\t\t}\n\t\t],\n\t\t\"table_id\": \"tblfPjJfhEApOEjL\",\n\t\t\"update_time\": 1718649347\n\t}\n}"
+        "text": "{\n\t\"code\": \"ae3pbec3d9634e5581972625f3f17edv\"\n}"
       },
       "parameters": [],
       "headers": [
         {
           "name": "Content-Type",
-          "value": "application/json"
+          "value": "application/json",
+          "id": "pair_75122e21fb2f4efc9cf031946938e266"
+        },
+        {
+          "id": "pair_a627255238464973aead4ce2ffedcdfd",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": "",
+          "disabled": false
         }
       ],
       "authentication": {},
-      "metaSortKey": -1718649234649,
+      "metaSortKey": -1719564544734,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1801,47 +1818,48 @@
       "_type": "request"
     },
     {
-      "_id": "fld_3646aaba9961481da2372ef0408e5700",
+      "_id": "fld_652bb792d8d645518fdbe29d5f17a11c",
       "parentId": "__WORKSPACE_ID__",
       "modified": "1637671845661",
-      "created": 1718649233153,
-      "name": "Logic đồng bộ dữ liệu",
+      "created": 1719564520096,
+      "name": "Larksuite App",
       "description": "",
       "environment": {},
       "environmentPropertyOrder": null,
-      "metaSortKey": -1718649233154,
+      "metaSortKey": -1719564520096,
       "_type": "request_group"
     },
     {
-      "_id": "req_2814c0b08b324508a8f05ec95618044c",
-      "parentId": "fld_3646aaba9961481da2372ef0408e5700",
+      "_id": "req_ee99db6a3557427c96c9745fdac4e1ee",
+      "parentId": "fld_652bb792d8d645518fdbe29d5f17a11c",
       "modified": "1637671845661",
-      "created": 1718652253823,
-      "url": "{{ _.host }}/okr/task/task2",
-      "name": "Sync add task",
-      "description": "",
+      "created": 1719397103833,
+      "url": "{{ _.host }}/auth/{{business_id}}/sync-custom-app",
+      "name": "Đồng bộ với Custom App",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 16,\n\t\"kr_id\": 63,\n\t\"list_new_task\": [\n\t\t{\n\t\t\t\"name\": \"Công việc 8\",\n\t\t\t\"participant_id\": [ 25 ],\n\t\t\t\"status_id\": 57,\n\t\t\t\"priority_id\": 19,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 9\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 57,\n\t\t\t\"priority_id\": 19,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Công việc 10\",\n\t\t\t\"participant_id\": [  ],\n\t\t\t\"status_id\": 57,\n\t\t\t\"priority_id\": 18,\n\t\t\t\"start_time\": \"2024-02-01 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-03-01 04:05:55.984305+00\",\n\t\t\t\"note\": \"Ghi chú 1\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"app_id\": \"cli_a6f99aaa7238d009\",\n\t\"app_secret\": \"5hmQisRLgDKGYD1UqDrJgfEMjGhjmRuv\"\n}"
       },
       "parameters": [],
       "headers": [
         {
           "name": "Content-Type",
           "value": "application/json",
-          "id": "pair_b99199b700704282ac88f2eb0b26da39"
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
         },
         {
-          "id": "pair_f1ffdeb0e2314b1d934f5fc273f4fc59",
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
           "name": "Authorization",
           "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
       "authentication": {},
-      "metaSortKey": -1718122628785,
+      "metaSortKey": -1719564545034,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1855,8 +1873,8 @@
       "parentId": "fld_652bb792d8d645518fdbe29d5f17a11c",
       "modified": "1637671845661",
       "created": 1719564544934,
-      "url": "{{ _.host }}/auth/check-permission-app",
-      "name": "Check quyền LarkSuite App",
+      "url": "{{ _.host }}/auth/{{business_id}}/login-larksuite",
+      "name": "Đồng bộ tài khoản với Larksuite",
       "description": "",
       "method": "POST",
       "body": {
@@ -1880,6 +1898,7 @@
       "authentication": {},
       "metaSortKey": -1719564544934,
       "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
@@ -1887,18 +1906,6 @@
       "settingRebuildPath": true,
       "settingFollowRedirects": "global",
       "_type": "request"
-    },
-    {
-      "_id": "fld_652bb792d8d645518fdbe29d5f17a11c",
-      "parentId": "__WORKSPACE_ID__",
-      "modified": "1637671845661",
-      "created": 1719564520096,
-      "name": "Larksuite App",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -1719564520096,
-      "_type": "request_group"
     },
     {
       "_id": "req_a8c75fa037eb47bd8eb359435f9bac73",
@@ -2507,436 +2514,6 @@
       "_type": "request"
     },
     {
-      "_id": "req_ee99db6a3557427c96c9745fdac4e1ee",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1719397103833,
-      "url": "{{ _.host }}/okr/business/sync-custom-app",
-      "name": "Đồng bộ với Custom App",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"app_id\": \"cli_a6f99aaa7238d009\",\n\t\"app_secret\": \"5hmQisRLgDKGYD1UqDrJgfEMjGhjmRuv\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795641,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "fld_83015a7ad6974c239a18b51ef331e762",
-      "parentId": "fld_fa99476a94e2456da52cd59412dc8bc2",
-      "modified": "1637671845661",
-      "created": 1719822781631,
-      "name": "Doanh nghiệp",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -1716962188865,
-      "_type": "request_group"
-    },
-    {
-      "_id": "req_c5001d1afadb4a9184015cc27ec0a181",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1719818067096,
-      "url": "{{ _.host }}/okr/business/business",
-      "name": "Tạo doanh nghiệp",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"SMIT Test 0001\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795691,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_5a3374cf98494356a3d69996986cd5a5",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1719915434695,
-      "url": "{{ _.host }}/okr/business/user-invitation",
-      "name": "Mời vào doanh nghiệp",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"list_email\": [\n\n\t\t{\n\t\t\t\"email\": \"huyhoang1996.tlu@gmail.com\"\n\t\t}\n\t]\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795666,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_3015354a09164fcfa2341ee405070e3b",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1719974388466,
-      "url": "{{ _.host }}/okr/business/business",
-      "name": "Sửa doanh nghiệp",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "PUT",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"id\": 4,\n\t\"name\": \"SMIT Test 12345\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795687.875,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_19d0750fa0714715b61e8bf7edcb687b",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1719974398531,
-      "url": "{{ _.host }}/okr/business/business",
-      "name": "Xóa doanh nghiệp",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "DELETE",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"id\": 6,\n\t\"name\": \"SMIT Test 12345\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795686.3125,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_42ef4be75ca743f49e7844a35c6bb3c8",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1719974935764,
-      "url": "{{ _.host }}/okr/business/business",
-      "name": "Hiển thị danh sách doanh nghiệp",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "GET",
-      "body": {
-        "mimeType": "application/json",
-        "text": ""
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795684.75,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_aa1ac7fc649d4c43838cb4763cd0194e",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1719976206659,
-      "url": "{{ _.host }}/okr/business/user",
-      "name": "Hiển thị danh sách thành viên",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "GET",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"id\": 7\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795681.625,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_4191ff69310b4dc39b7df634b061a4ad",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1719977693600,
-      "url": "{{ _.host }}/okr/business/info-business",
-      "name": "Hiển thị thông tin doanh nghiệp",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "GET",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"id\": 7\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795683.1875,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_90c19377986f4da3910e3674e4778a3f",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1719989919691,
-      "url": "{{ _.host }}/okr/business/accept-invitation",
-      "name": "Chấp nhận lời mời vào doanh nghiệp",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"b4OxOymE5SwoiBzcOK4HEQsRsKOjOi\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token_1996 }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795653.5,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_6ce53a9c82c74071a8b857f3ba66bfb0",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1719991568712,
-      "url": "{{ _.host }}/okr/business/user",
-      "name": "Xóa thành viên",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "DELETE",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"id\": 70\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795673.8125,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_789a6735cc4b4742a195019fbc19ec62",
-      "parentId": "fld_83015a7ad6974c239a18b51ef331e762",
-      "modified": "1637671845661",
-      "created": 1720003302592,
-      "url": "{{ _.host }}/okr/business/invitation",
-      "name": "Hiển thị thông tin doanh nghiệp khi gửi code",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
-      "method": "GET",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"6hjrurAYSwLtuWwvRqcs8Cmk3wyrg3\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
-        },
-        {
-          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
-          "name": "Authorization",
-          "value": "{{ _.access_token_1996 }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": -1719822795659.75,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
       "_id": "req_24fba15bbd18409cae664040c3bdd6b7",
       "parentId": "fld_f8628e8b64d14e1792085a847ecc8a3a",
       "modified": "1637671845661",
@@ -2997,7 +2574,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Tesst 12\"\n}"
+        "text": "{\n\t\"name\": \"Test 123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -3240,7 +2817,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 19\n}"
+        "text": "{\n\t\"object_id\": 29\n}"
       },
       "parameters": [],
       "headers": [
@@ -3330,7 +2907,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 19\n}"
+        "text": "{\n\t\"object_id\": 29\n}"
       },
       "parameters": [],
       "headers": [
@@ -3447,7 +3024,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"list_email\": [\n\t\t{\n\t\t\t\"email\": \"ngochai1121a@gmail.com\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"list_email\": [\n\t\t{\n\t\t\t\"email\": \"chienphuong205@gmail.com\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"chienphuong206@gmail.com\"\n\t\t},\n\t\t{\n\t\t\t\"email\": \"chienphuong207@gmail.com\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -3497,7 +3074,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"kTeZNXeRHwJeVjchaLJU5Dj5e8Pyyv\"\n}"
+        "text": "{\n\t\"code\": \"ggr2eXAq6QEVHQLMzwEyZW8sEDJJIl\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -3535,7 +3112,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"73415L20Hq7ggK19PFgAwJOkPxnLKm\"\n}"
+        "text": "{\n\t\"code\": \"7WjjqXCTzdXivzJbKKbq1UgXo2HY4E\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -3747,6 +3324,7 @@
         "host": "http://dev.smit.team:6840",
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjAxMTQzODQsImV4cCI6MTcyMDcxOTE4NH0.ffKnl6I7p0Zp8qnWEfbQNC0azbTyX7wbtzurh8svlKw",
         "access_token_1996": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MjAxMjQ4MzQsImV4cCI6MTcyMDcyOTYzNH0.VQ4R8Dz5u0etg_0LK8VVpqXLRsJEX_t5NKwe93xn7u8",
+        "access_token_hoangvn": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2OCwiaWF0IjoxNzIwMzk1NTAzLCJleHAiOjE3MjEwMDAzMDN9.eFqq-qqWPyOAwC3ZLlMM6gcEo7idSrBRKkIPMJP21yk",
         "business_id": "278736985894421505"
       },
       "dataPropertyOrder": {
@@ -3754,6 +3332,7 @@
           "host",
           "access_token",
           "access_token_1996",
+          "access_token_hoangvn",
           "business_id"
         ]
       },
