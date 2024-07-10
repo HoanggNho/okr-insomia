@@ -2520,7 +2520,7 @@
       "created": 1720114953903,
       "url": "{{ _.host }}/okr/me/business",
       "name": "Danh sách doanh nghiệp",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "description": "```\nis_tenant_larksuite\n- true: vào màn trong\n- false: hiển thị popup điền app_id và app_secret\n```",
       "method": "GET",
       "body": {
         "mimeType": "application/json",
@@ -2684,7 +2684,7 @@
       "created": 1720560204492,
       "url": "{{ _.host }}/okr/{{business_id}}/business/info-me",
       "name": "Thông tin doanh nghiệp của tôi",
-      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "description": "```\nis_linked_larksuite:\n- False: Hiển thị màn đăng nhập với larksuite\n- True:  Vào trong màn đồng bộ\n```",
       "method": "GET",
       "body": {
         "mimeType": "application/json",
