@@ -1788,7 +1788,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"eeard39b91f841008e72d1befd43fb7n\"\n}"
+        "text": "{\n\t\"code\": \"803p54d6e32845038c952a0394d2d2cr\"\n}  "
       },
       "parameters": [],
       "headers": [
@@ -1897,6 +1897,46 @@
       ],
       "authentication": {},
       "metaSortKey": -1719564544934,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_6251eacd4ad743ab98aab885272d4414",
+      "parentId": "fld_652bb792d8d645518fdbe29d5f17a11c",
+      "modified": "1637671845661",
+      "created": 1720628739160,
+      "url": "{{ _.host }}/okr/{{business_id}}/lark/logout-larksuite",
+      "name": "Đăng xuất tài khoản Larksuite",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_75122e21fb2f4efc9cf031946938e266"
+        },
+        {
+          "id": "pair_a627255238464973aead4ce2ffedcdfd",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": "",
+          "disabled": false
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1718580283827.5,
       "isPrivate": false,
       "pathParameters": [],
       "settingStoreCookies": true,
