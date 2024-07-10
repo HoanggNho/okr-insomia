@@ -865,7 +865,7 @@
       "description": "",
       "environment": {},
       "environmentPropertyOrder": null,
-      "metaSortKey": -1714101691085,
+      "metaSortKey": -1714101691103.75,
       "_type": "request_group"
     },
     {
@@ -1782,13 +1782,13 @@
       "parentId": "fld_652bb792d8d645518fdbe29d5f17a11c",
       "modified": "1637671845661",
       "created": 1714101692206,
-      "url": "{{ _.host }}/auth/{{business_id}}/get-info-larksuite",
+      "url": "{{ _.host }}/okr/{{business_id}}/lark/get-info-larksuite",
       "name": "Đồng bộ thông tin với tài khoản OKR",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"ae3pbec3d9634e5581972625f3f17edv\"\n}"
+        "text": "{\n\t\"code\": \"eeard39b91f841008e72d1befd43fb7n\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1826,7 +1826,7 @@
       "description": "",
       "environment": {},
       "environmentPropertyOrder": null,
-      "metaSortKey": -1719564520096,
+      "metaSortKey": -1714101691097.5,
       "_type": "request_group"
     },
     {
@@ -1834,7 +1834,7 @@
       "parentId": "fld_652bb792d8d645518fdbe29d5f17a11c",
       "modified": "1637671845661",
       "created": 1719397103833,
-      "url": "{{ _.host }}/auth/{{business_id}}/sync-custom-app",
+      "url": "{{ _.host }}/okr/{{business_id}}/lark/sync-custom-app",
       "name": "Đồng bộ với Custom App",
       "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
       "method": "POST",
@@ -1873,7 +1873,7 @@
       "parentId": "fld_652bb792d8d645518fdbe29d5f17a11c",
       "modified": "1637671845661",
       "created": 1719564544934,
-      "url": "{{ _.host }}/auth/{{business_id}}/login-larksuite",
+      "url": "{{ _.host }}/okr/{{business_id}}/lark/login-larksuite",
       "name": "Đồng bộ tài khoản với Larksuite",
       "description": "",
       "method": "POST",
@@ -2669,6 +2669,45 @@
       "authentication": {},
       "metaSortKey": -1720117313585,
       "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2f1a48dd16a145c2aa205f923e728fc1",
+      "parentId": "fld_f8628e8b64d14e1792085a847ecc8a3a",
+      "modified": "1637671845661",
+      "created": 1720560204492,
+      "url": "{{ _.host }}/okr/{{business_id}}/business/info-me",
+      "name": "Thông tin doanh nghiệp của tôi",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720117313710,
+      "isPrivate": false,
+      "pathParameters": [],
       "settingStoreCookies": true,
       "settingSendCookies": true,
       "settingDisableRenderRequestBody": false,
