@@ -51,6 +51,43 @@
       "_type": "workspace"
     },
     {
+      "_id": "req_c15fa5588eea48a99e9c9614347bd166",
+      "parentId": "__WORKSPACE_ID__",
+      "modified": "1637671845661",
+      "created": 1721117601770,
+      "url": "{{ _.host }}/public/test",
+      "name": "Test",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_a0df06b51dfe42e8b15967da84e3601a",
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": ""
+        },
+        {
+          "id": "pair_0610cc8829984615828a961fdd0511cb",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1717279105893,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_776f82c454ec4f95bd56bccc0654a16d",
       "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
       "modified": "1637671845661",
@@ -504,7 +541,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 2,\n\t\"aligned_user_id\": null\n}"
+        "text": "{\n\t\"period_id\": 83,\n\t\"aligned_user_id\": null\n}"
       },
       "parameters": [],
       "headers": [
@@ -555,7 +592,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 29,\n\t\"aligned_user_id\": null\n}"
+        "text": "{\n\t\"object_id\": 55,\n\t\"aligned_user_id\": 252\n}"
       },
       "parameters": [],
       "headers": [
@@ -672,7 +709,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 19,\n\t\"kr_id\": 50\n}"
+        "text": "{\n\t\"object_id\": 125,\n\t\"kr_id\": 282\n}"
       },
       "parameters": [],
       "headers": [
@@ -711,7 +748,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 29\n}"
+        "text": "{\n\t\"object_id\": 119\n}"
       },
       "parameters": [],
       "headers": [
@@ -828,7 +865,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 29,\n\t\"kr_id\": 83,\n\t\"aligned_user_id\": null\n\t}"
+        "text": "{\n\t\"object_id\": 55,\n\t\"kr_id\": 129,\n\t\"aligned_user_id\": 252\n\t}"
       },
       "parameters": [],
       "headers": [
@@ -1308,7 +1345,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 29,\n  \"url\": \"https://smitvietnam.larksuite.com/base/A9NQbAQm7acA04s44IZuWItFsUb?table=tblvfvQJ1wQ67rVS&view=vewIX0SJpb\"\n}\n"
+        "text": "{\n\t\"object_id\": 48,\n  \"url\": \"https://smitvietnam.larksuite.com/base/A9NQbAQm7acA04s44IZuWItFsUb?table=tblvfvQJ1wQ67rVS&view=vewIX0SJpb\"\n}\n"
       },
       "parameters": [],
       "headers": [
@@ -1347,7 +1384,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 29,\n\t\"list_field\": [\n\t\t{\n\t\t\t\"db_field\": \"field_date_created\",\n\t\t\t\"lark_field_id\": \"fld9Tq2Mra\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_name\",\n\t\t\t\"lark_field_id\": \"fldsLNwISb\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_start_time\",\n\t\t\t\"lark_field_id\": \"fld1fKTh3E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_end_time\",\n\t\t\t\"lark_field_id\": \"fld9sFkCDd\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_task_note\",\n\t\t\t\"lark_field_id\": \"fldKkc6Nd3\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_user\",\n\t\t\t\"lark_field_id\": \"fldB9ga2xp\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_participant_task\",\n\t\t\t\"lark_field_id\": \"fldBDgSRpG\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_priority\",\n\t\t\t\"lark_field_id\": \"fld2jdbS2E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_status\",\n\t\t\t\"lark_field_id\": \"fldopO5wYn\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_progress\",\n\t\t\t\"lark_field_id\": \"fldmDx9DFi\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_kr_id\",\n\t\t\t\"lark_field_id\": \"flddHnHGOL\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_key_result\",\n\t\t\t\"lark_field_id\": \"fld5liby8z\"\n\t\t}\n\t]\n}\n\n"
+        "text": "{\n\t\"object_id\": 48,\n\t\"list_field\": [\n\t\t{\n\t\t\t\"db_field\": \"field_date_created\",\n\t\t\t\"lark_field_id\": \"fld9Tq2Mra\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_name\",\n\t\t\t\"lark_field_id\": \"fldsLNwISb\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_start_time\",\n\t\t\t\"lark_field_id\": \"fld1fKTh3E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_end_time\",\n\t\t\t\"lark_field_id\": \"fld9sFkCDd\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_task_note\",\n\t\t\t\"lark_field_id\": \"fldKkc6Nd3\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_user\",\n\t\t\t\"lark_field_id\": \"fldB9ga2xp\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_participant_task\",\n\t\t\t\"lark_field_id\": \"fldBDgSRpG\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_priority\",\n\t\t\t\"lark_field_id\": \"fld2jdbS2E\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_status\",\n\t\t\t\"lark_field_id\": \"fldopO5wYn\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_progress\",\n\t\t\t\"lark_field_id\": \"fldmDx9DFi\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_kr_id\",\n\t\t\t\"lark_field_id\": \"flddHnHGOL\"\n\t\t},\n\t\t{\n\t\t\t\"db_field\": \"field_key_result\",\n\t\t\t\"lark_field_id\": \"fld5liby8z\"\n\t\t}\n\t]\n}\n\n"
       },
       "parameters": [],
       "headers": [
@@ -1503,7 +1540,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 29\n}\n"
+        "text": "{\n\t\"object_id\": 48\n}\n"
       },
       "parameters": [],
       "headers": [
@@ -1620,7 +1657,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 2,\n\t\"type\": \"me\"\n}"
+        "text": "{\n\t\"period_id\": 85,\n\t\"type\": \"me\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1632,7 +1669,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token }}",
+          "value": "{{ _.access_token_1996 }}",
           "description": ""
         }
       ],
@@ -1671,7 +1708,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 47\n}"
+        "text": "{\n\t\"check_in_id\": 170\n}"
       },
       "parameters": [],
       "headers": [
@@ -1840,7 +1877,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"app_id\": \"cli_a6f99aaa7238d009\",\n\t\"app_secret\": \"5hmQisRLgDKGYD1UqDrJgfEMjGhjmRuv\"\n}"
+        "text": "{\n\t\"app_id\": \"cli_a61f474dee38d00a\",\n\t\"app_secret\": \"OwmVbHPBgNFVq3CQNuYjdcJdrVLvMHPy\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2112,6 +2149,45 @@
       "_type": "request"
     },
     {
+      "_id": "req_4b1f2a70b8964f32a69295d2ee745f61",
+      "parentId": "fld_9861d7e335fe45189465b2403b32b8bb",
+      "modified": "1637671845661",
+      "created": 1721284644681,
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/period",
+      "name": "Chọn chu kỳ",
+      "description": "```\nperiod_type : [ 3-months, 6-months, 12-months, custom ]\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"period_type\": \"custom\",\n\t\"name\": \"Chu kỳ 124343344\",\n\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 150,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_49d7baf961624fe38d288a1d914ee15d",
       "parentId": "fld_722cf21628804c359b1e39d35a0bb28c",
       "modified": "1637671845661",
@@ -2374,7 +2450,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"email\": \"huyhoang1996.tlu@gmail.com\",\n\t\"password\": \"123123\"\n}"
+        "text": "{\n\t\"email\": \"huyhoang96.tlu@gmail.com\",\n\t\"password\": \"123123\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2896,7 +2972,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 29\n}"
+        "text": "{\n\t\"object_id\": 107\n}"
       },
       "parameters": [],
       "headers": [
@@ -3153,7 +3229,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"code\": \"ggr2eXAq6QEVHQLMzwEyZW8sEDJJIl\"\n}"
+        "text": "{\n\t\"code\": \"NTbv08frA8TYEfyFBorWzD70on1Bod\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -3165,7 +3241,7 @@
         {
           "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
           "name": "Authorization",
-          "value": "{{ _.access_token_1996 }}",
+          "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
@@ -3401,10 +3477,12 @@
       "name": "dev",
       "data": {
         "host": "http://dev.smit.team:6840",
-        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjAxMTQzODQsImV4cCI6MTcyMDcxOTE4NH0.ffKnl6I7p0Zp8qnWEfbQNC0azbTyX7wbtzurh8svlKw",
-        "access_token_1996": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MjAxMjQ4MzQsImV4cCI6MTcyMDcyOTYzNH0.VQ4R8Dz5u0etg_0LK8VVpqXLRsJEX_t5NKwe93xn7u8",
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3OSwiaWF0IjoxNzIxMTkxMTk5LCJleHAiOjE3MjE3OTU5OTl9.mep8jbnARfheD1qgGWvqPpyb1kl-eu5Hnpn6QqSoWng",
+        "access_token_1996": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3OSwiaWF0IjoxNzIxMjkyNTg4LCJleHAiOjE3MjE4OTczODh9.fJNd_Bnu6yPhqac6JhRHjjzOXTM165NGodA2c29DyY4",
         "access_token_hoangvn": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2OCwiaWF0IjoxNzIwMzk1NTAzLCJleHAiOjE3MjEwMDAzMDN9.eFqq-qqWPyOAwC3ZLlMM6gcEo7idSrBRKkIPMJP21yk",
-        "business_id": "278736985894421505"
+        "access_token_hoang123": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3MCwiaWF0IjoxNzIwNzAxNDk0LCJleHAiOjE3MjEzMDYyOTR9.te-cmvBfahqx9togNBaPRuASN-Lx31adSSanw1dZ4LU",
+        "business_id": "287317139117835502",
+        "access_token_test": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjA4NTk1MjYsImV4cCI6MTcyMTQ2NDMyNn0.hbVDn3r_lXf0M3IZsRYdtgyn_yS_aZYeQjys2BTn7Dc"
       },
       "dataPropertyOrder": {
         "&": [
@@ -3412,7 +3490,9 @@
           "access_token",
           "access_token_1996",
           "access_token_hoangvn",
-          "business_id"
+          "access_token_hoang123",
+          "business_id",
+          "access_token_test"
         ]
       },
       "color": null,
