@@ -2115,13 +2115,13 @@
       "parentId": "fld_9861d7e335fe45189465b2403b32b8bb",
       "modified": "1637671845661",
       "created": 1721284644681,
-      "url": "{{ _.host }}/okr/{{business_id}}/okrs/period",
-      "name": "Chọn chu kỳ",
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/list-period",
+      "name": "Tạo nhiều chu kỳ",
       "description": "```\nperiod_type : [ 3-months, 6-months, 12-months, custom ]\n```",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_type\": \"custom\",\n\t\"list_period\": [\n\t\t{\n\t\t\t\"name\": \"Chu kỳ 12\",\n\t\t\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Chu kỳ 123\",\n\t\t\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"list_period\": [\n\t\t{\n\t\t\t\"name\": \"Chu kỳ 12\",\n\t\t\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Chu kỳ 123\",\n\t\t\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -2139,6 +2139,45 @@
       ],
       "authentication": {},
       "metaSortKey": 150,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7002203da8794b10aa3aac6775332250",
+      "parentId": "fld_9861d7e335fe45189465b2403b32b8bb",
+      "modified": "1637671845661",
+      "created": 1721378560442,
+      "url": "{{ _.host }}/okr/{{business_id}}/okrs/period",
+      "name": "Thêm chu kỳ",
+      "description": "```\nperiod_type : [ 3-months, 6-months, 12-months, custom ]\n```",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Chu kỳ 12\",\n\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
+        },
+        {
+          "id": "pair_5590236fd73a45fc813990d8242f991f",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 162.5,
       "isPrivate": false,
       "pathParameters": [],
       "settingStoreCookies": true,
@@ -2652,7 +2691,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Test 123\"\n}"
+        "text": "{\n\t\"name\": \"Test 1234\"\n}"
       },
       "parameters": [],
       "headers": [
