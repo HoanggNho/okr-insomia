@@ -1985,56 +1985,6 @@
       "_type": "request"
     },
     {
-      "_id": "req_a8c75fa037eb47bd8eb359435f9bac73",
-      "parentId": "fld_9861d7e335fe45189465b2403b32b8bb",
-      "modified": "1637671845661",
-      "created": 1714917848371,
-      "url": "{{ _.host }}/okr/{{business_id}}/okrs/period",
-      "name": "Tạo chu kỳ",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Chu kỳ 6\",\n\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        {
-          "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_1d80318ec27f45e1b345021c038ce53a"
-        },
-        {
-          "id": "pair_5590236fd73a45fc813990d8242f991f",
-          "name": "Authorization",
-          "value": "{{ _.access_token }}",
-          "description": ""
-        }
-      ],
-      "authentication": {},
-      "metaSortKey": 125,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "fld_9861d7e335fe45189465b2403b32b8bb",
-      "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
-      "modified": "1637671845661",
-      "created": 1715854075052,
-      "name": "Chu kỳ",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -1715854075052,
-      "_type": "request_group"
-    },
-    {
       "_id": "req_27f71c74de4246e08b3b3cd5607d7a56",
       "parentId": "fld_9861d7e335fe45189465b2403b32b8bb",
       "modified": "1637671845661",
@@ -2071,6 +2021,18 @@
       "settingRebuildPath": true,
       "settingFollowRedirects": "global",
       "_type": "request"
+    },
+    {
+      "_id": "fld_9861d7e335fe45189465b2403b32b8bb",
+      "parentId": "fld_0c0b347e3d29469d9986c938522b31e7",
+      "modified": "1637671845661",
+      "created": 1715854075052,
+      "name": "Chu kỳ",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1715854075052,
+      "_type": "request_group"
     },
     {
       "_id": "req_502e7156d7584d5c8e0acbe2092d2aa4",
@@ -2159,7 +2121,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_type\": \"custom\",\n\t\"name\": \"Chu kỳ 124343344\",\n\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n}"
+        "text": "{\n\t\"period_type\": \"custom\",\n\t\"list_period\": [\n\t\t{\n\t\t\t\"name\": \"Chu kỳ 12\",\n\t\t\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Chu kỳ 123\",\n\t\t\t\"start_time\": \"2024-08-03 04:05:55.984305+00\",\n\t\t\t\"end_time\": \"2024-08-05 04:05:55.984305+00\"\n\t\t}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
