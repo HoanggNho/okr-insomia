@@ -493,7 +493,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 380,\n\t\"object_id\": 174\n}"
+        "text": "{\n\t\"period_id\": 380,\n\t\"object_id\": 174,\n\t\"list_aligned_object_id\": [ 176, 178]\n}"
       },
       "parameters": [],
       "headers": [
@@ -532,7 +532,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 380,\n\t\"object_id\": 174\n}"
+        "text": "{\n\t\"period_id\": 380,\n\t\"object_id\": 174,\n\t\"list_aligned_object_id\": [ 176, 178]\n}"
       },
       "parameters": [],
       "headers": [
