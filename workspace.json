@@ -61,7 +61,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Mục tiêu 333\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [  ]\n\t},\n\t\"period_id\": 2,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 8,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\"list_aligned_object_id\": [  ]\n}"
+        "text": "{\n\t\"name\": \"Mục tiêu 333\",\n\t\"object_type\": \"hoc-tap\",\n\t\"display_with\": {\n\t\t\"type\": \"public\",\n\t\t\"data\": [\n\t\t]\n\t},\n\t\"period_id\": 2,\n\t\"list_kr\": [\n\t\t{\n\t\t\t\"name\": \"Key results 1\",\n\t\t\t\"unit_id\": 2,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"input\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 2\",\n\t\t\t\"unit_id\": 3,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"output\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Key results 3\",\n\t\t\t\"unit_id\": 8,\n\t\t\t\"start_value\": 10,\n\t\t\t\"target_value\": 120,\n\t\t\t\"kr_type\": \"outcome\"\n\t\t}\n\t],\n\t\"list_aligned_object_id\": [\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -111,7 +111,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 380,\n\t\"aligned_user_id\": null\n}"
+        "text": "{\n\t\"period_id\": 409,\n\t\"aligned_user_id\": null\n}"
       },
       "parameters": [],
       "headers": [
@@ -493,7 +493,7 @@
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 380,\n\t\"object_id\": 174,\n\t\"list_aligned_object_id\": [ 176, 178]\n}"
+        "text": "{\n\t\"period_id\": 380,\n\t\"object_id\": 174,\n\t\"list_aligned_object_id\": [  175 ]\n}"
       },
       "parameters": [],
       "headers": [
@@ -867,7 +867,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"object_id\": 8,\n\t\"score_object\": 0.5,\n\t\"list_self_score\": [\n\t\t{\n\t\t\t\"kr_id\": 21,\n\t\t\t\"score_kr\": 1\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 22,\n\t\t\t\"score_kr\": 0.6\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 23,\n\t\t\t\"score_kr\": 0.8\n\t\t}\n\t],\n\t\"hoan_thanh_muc_tieu_chua\": \"test test test\",\n\t\"dieu_gi_gop_phan_thanh_cong\": \"test test test\",\n\t\"gap_nhung_tro_ngai_gi\": \"test test test\",\n\t\"muc_tieu_kho_hay_de_khi_dat_ra\": \"test test test\",\n\t\"viet_lai_se_thay_doi_dieu_gi\": \"test test test\",\n\t\"dieu_gi_thay_doi_voi_OKR_chu_ky_tiep_theo\": \"test test test\",\n\t\"nhan_duoc_gi_tu_quan_ly\": \"1\",\n\t\"dieu_gi_tu_nguoi_quan_ly_can_tro_kha_nang_lam_viec\": \"1\",\n\t\"dieu_gi_giup_ban_thanh_cong_hon\": \"1\",\n\t\"ky_nang_nang_luc_muon_cai_thien\": \"1\",\n\t\"ky_nang_nang_luc_muon_bo_sung\": \"1\",\n\t\"dieu_gi_giup_phat_trien_trong_nghe_nghiep\": \"1\"\n}"
+        "text": "{\n\t\"object_id\": 200,\n\t\"score_object\": 0.5,\n\t\"list_self_score\": [\n\t\t{\n\t\t\t\"kr_id\": 21,\n\t\t\t\"score_kr\": 1\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 22,\n\t\t\t\"score_kr\": 0.6\n\t\t},\n\t\t{\n\t\t\t\"kr_id\": 23,\n\t\t\t\"score_kr\": 0.8\n\t\t}\n\t],\n\t\"hoan_thanh_muc_tieu_chua\": \"test test test\",\n\t\"dieu_gi_gop_phan_thanh_cong\": \"test test test\",\n\t\"gap_nhung_tro_ngai_gi\": \"test test test\",\n\t\"muc_tieu_kho_hay_de_khi_dat_ra\": \"test test test\",\n\t\"viet_lai_se_thay_doi_dieu_gi\": \"test test test\",\n\t\"dieu_gi_thay_doi_voi_OKR_chu_ky_tiep_theo\": \"test test test\",\n\t\"nhan_duoc_gi_tu_quan_ly\": \"1\",\n\t\"dieu_gi_tu_nguoi_quan_ly_can_tro_kha_nang_lam_viec\": \"1\",\n\t\"dieu_gi_giup_ban_thanh_cong_hon\": \"1\",\n\t\"ky_nang_nang_luc_muon_cai_thien\": \"1\",\n\t\"ky_nang_nang_luc_muon_bo_sung\": \"1\",\n\t\"dieu_gi_giup_phat_trien_trong_nghe_nghiep\": \"1\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -879,7 +879,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token_1996 }}",
+          "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
@@ -1737,7 +1737,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"period_id\": 85,\n\t\"type\": \"me\"\n}"
+        "text": "{\n\t\"period_id\": 409,\n\t\"type\": \"with-me\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -1749,7 +1749,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token_1996 }}",
+          "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
@@ -1788,7 +1788,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 170\n}"
+        "text": "{\n\t\"check_in_id\": 222\n}"
       },
       "parameters": [],
       "headers": [
@@ -1800,7 +1800,7 @@
         {
           "id": "pair_5590236fd73a45fc813990d8242f991f",
           "name": "Authorization",
-          "value": "{{ _.access_token_1996 }}",
+          "value": "{{ _.access_token }}",
           "description": ""
         }
       ],
@@ -1866,7 +1866,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"check_in_id\": 42,\n\t\"send\": \"Con chó chiến nguuuuu\"\n}"
+        "text": "{\n\t\"check_in_id\": 224,\n\t\"send\": \"Con chó chiến nguuuuu\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -2054,6 +2054,84 @@
       ],
       "authentication": {},
       "metaSortKey": -1718580283827.5,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_49590dcd6bf74ade900ab8de354c8621",
+      "parentId": "fld_652bb792d8d645518fdbe29d5f17a11c",
+      "modified": "1637671845661",
+      "created": 1722487101010,
+      "url": "{{ _.host }}/okr/{{business_id}}/lark/leave-custom-app",
+      "name": "Hủy đồng bộ với Custom App",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719564544984,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ea512685575b421fa52cc467ef170d93",
+      "parentId": "fld_652bb792d8d645518fdbe29d5f17a11c",
+      "modified": "1637671845661",
+      "created": 1722495613406,
+      "url": "{{ _.host }}/okr/{{business_id}}/lark/info-custom-app",
+      "name": "Hiển thị thông tin Custom App",
+      "description": "```\ncá nhân: personal\n\ndoanh nghiệp: business\n\n```",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_79d08ea8f17044cb9d1841d9903e7748"
+        },
+        {
+          "id": "pair_3fda3b46b90b4ff581a946ad0e4fc0de",
+          "name": "Authorization",
+          "value": "{{ _.access_token }}",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719564545009,
       "isPrivate": false,
       "pathParameters": [],
       "settingStoreCookies": true,
@@ -3597,11 +3675,11 @@
       "name": "dev",
       "data": {
         "host": "http://dev.smit.team:6840",
-        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMDIsImlhdCI6MTcyMTYzMjAwMSwiZXhwIjoxNzIyMjM2ODAxfQ.ET-WmVBBVt9-4GylCBh42OUSLvYEFL-fJOYnQ3mUc8Y",
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjgsImlhdCI6MTcyMjQ5NTcyMCwiZXhwIjoxNzIzMTAwNTIwfQ.rIv3EU1MkvHuv47unb_SNxoAvU2NYHmPFSv01wFJMoM",
         "access_token_1996": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3OSwiaWF0IjoxNzIxMjkyNTg4LCJleHAiOjE3MjE4OTczODh9.fJNd_Bnu6yPhqac6JhRHjjzOXTM165NGodA2c29DyY4",
         "access_token_hoangvn": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2OCwiaWF0IjoxNzIwMzk1NTAzLCJleHAiOjE3MjEwMDAzMDN9.eFqq-qqWPyOAwC3ZLlMM6gcEo7idSrBRKkIPMJP21yk",
         "access_token_hoang123": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3MCwiaWF0IjoxNzIwNzAxNDk0LCJleHAiOjE3MjEzMDYyOTR9.te-cmvBfahqx9togNBaPRuASN-Lx31adSSanw1dZ4LU",
-        "business_id": "289354309945001308",
+        "business_id": "294393352198030713",
         "access_token_test": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjA4NTk1MjYsImV4cCI6MTcyMTQ2NDMyNn0.hbVDn3r_lXf0M3IZsRYdtgyn_yS_aZYeQjys2BTn7Dc"
       },
       "dataPropertyOrder": {
